@@ -1,0 +1,115 @@
+#N canvas 446 59 549 644 10;
+#X obj 117 139 gemwin;
+#X obj 63 144 tgl 15 0 empty empty empty 0 -6 0 10 -262144 -1 -1 1
+1;
+#X msg 71 109 create;
+#X obj 131 78 bang;
+#X floatatom 189 54 5 0 1 0 - - -;
+#X floatatom 150 47 5 0 1 0 - - -;
+#X obj 162 94 pack f f f;
+#X floatatom 209 74 5 0 1 0 - - -;
+#X msg 160 116 color \$1 \$2 \$3;
+#X obj -9 58 bang;
+#X floatatom 49 34 5 0 0 0 - - -;
+#X floatatom 10 27 5 0 0 0 - - -;
+#X obj 26 62 pack f f;
+#X msg 84 55 border \$1;
+#X obj 89 34 tgl 15 0 empty empty empty 0 -6 0 10 -262144 -1 -1 0 1
+;
+#X obj 144 0 tgl 15 0 empty empty empty 0 -6 0 10 -262144 -1 -1 0 1
+;
+#X msg 131 20 fullscreen \$1;
+#X obj 30 129 bng 15 250 50 0 empty empty empty 0 -6 0 10 -262144 -1
+-1;
+#X obj 351 101 gemhead;
+#X msg 51 8 lighting \$1;
+#X obj 51 -14 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+;
+#N canvas 506 268 450 300 countto 0;
+#X obj 212 239 outlet;
+#X obj 146 22 inlet;
+#X obj 239 31 inlet;
+#X obj 325 28 inlet;
+#X obj 139 74 bang;
+#X obj 245 96 + 1;
+#X obj 208 117 f 0;
+#X msg 253 142 0;
+#X obj 253 120 sel \$1;
+#X text 153 7 ++;
+#X text 224 16 argument;
+#X text 311 13 increment value;
+#X connect 1 0 4 0;
+#X connect 2 0 8 1;
+#X connect 3 0 5 1;
+#X connect 4 0 6 0;
+#X connect 5 0 8 0;
+#X connect 6 0 0 0;
+#X connect 6 0 5 0;
+#X connect 7 0 6 1;
+#X connect 8 0 7 0;
+#X connect 8 1 6 1;
+#X restore 427 200 pd countto 360;
+#X obj 451 128 tgl 15 0 empty empty empty 0 -6 0 10 -262144 -1 -1 0
+1;
+#X obj 437 228 / 36;
+#X obj 445 159 metro 50;
+#X msg 19 87 dimen 450 450;
+#X obj 351 164 pix_movie;
+#X obj 468 -5 bng 25 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 468 24 openpanel;
+#X msg 468 44 open \$1;
+#X msg 474 87 auto \$1;
+#X obj 474 69 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 1 1
+;
+#X obj 336 64 tgl 15 0 empty empty empty 0 -6 0 10 -262144 -1 -1 0
+1;
+#X obj 352 257 rectangle 3 3;
+#X obj 324 323 readsf~;
+#X obj 298 205 bng 25 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 298 234 openpanel;
+#X msg 298 254 open \$1;
+#X obj 307 408 dac~;
+#X floatatom 395 138 5 0 0 0 - - -;
+#X msg 206 283 1;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 6 0;
+#X connect 4 0 3 0;
+#X connect 4 0 6 1;
+#X connect 5 0 6 0;
+#X connect 6 0 8 0;
+#X connect 7 0 6 2;
+#X connect 7 0 3 0;
+#X connect 8 0 0 0;
+#X connect 9 0 12 0;
+#X connect 10 0 9 0;
+#X connect 10 0 12 1;
+#X connect 11 0 12 0;
+#X connect 12 0 25 0;
+#X connect 13 0 0 0;
+#X connect 14 0 13 0;
+#X connect 15 0 16 0;
+#X connect 16 0 0 0;
+#X connect 17 0 0 0;
+#X connect 18 0 26 0;
+#X connect 19 0 0 0;
+#X connect 20 0 19 0;
+#X connect 21 0 23 0;
+#X connect 22 0 24 0;
+#X connect 24 0 21 0;
+#X connect 25 0 0 0;
+#X connect 26 0 33 0;
+#X connect 27 0 28 0;
+#X connect 28 0 29 0;
+#X connect 29 0 26 0;
+#X connect 30 0 26 0;
+#X connect 31 0 30 0;
+#X connect 31 0 34 0;
+#X connect 34 0 38 0;
+#X connect 35 0 36 0;
+#X connect 36 0 37 0;
+#X connect 37 0 34 0;
+#X connect 39 0 26 1;
+#X connect 40 0 34 0;

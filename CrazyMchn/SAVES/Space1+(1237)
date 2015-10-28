@@ -1,0 +1,17 @@
+panset 42.809;
+LFOPanFreq 0;
+LFOPanRange 0;
+PanLFOIO 1;
+wavpreset 3;
+Volume 0.124508;
+FreqLFOIO 79.9101;
+whitenoise 0.6182;
+FreqLFOPitch 0.90625;
+RangeLFOPitch 3.96875;
+LFOPitchFB 0.140625;
+FreqOsc 57;
+TempoOsc 105;
+TempoLFOIO 1;
+LFOTempoFreq 1.43243;
+TempoFB 9.32432;
+LFOTempoRange 218.919;

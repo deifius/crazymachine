@@ -1,0 +1,53 @@
+#N canvas 124 181 584 435 10;
+#X obj 101 101 tgl 43 0 \$0-DSPbox \$0-2DSPbox empty 0 -6 0 10 -262144
+-1 -1 0 1;
+#X obj 102 102 cnv 41 40 40 \$0-UnderCover \$0-2UnderCover empty 20
+12 0 14 -99865 -262144 0;
+#X obj 106 104 cnv 35 35 35 \$0-CoverUp \$0-2CoverUp empty 20 12 0
+14 -166441 -262144 0;
+#X obj 177 214 s \$0-2UnderCover;
+#X obj 247 193 s \$0-2CoverUp;
+#X msg 174 125 color 31;
+#X msg 237 128 color 201;
+#X msg 399 98 color 31;
+#X msg 327 98 color 201;
+#X obj 218 39 sel 0 1;
+#X obj 201 14 r \$0-DSPbox;
+#X msg 103 178 pos 104 106;
+#X msg 21 183 pos 106 104;
+#X obj 102 102 cnv 42 1 1 empty \$0-state off 8 20 0 20 -262144 -1
+0;
+#X obj 332 237 s \$0-state;
+#X msg 354 181 label on;
+#X msg 332 206 label off;
+#X msg 210 266 \; pd dsp 0;
+#X msg 280 266 \; pd dsp 1;
+#X msg 434 252 color 1 0;
+#X msg 424 215 color 0 -1;
+#X obj 88 28 inlet;
+#X obj 103 65 s \$0-2DSPbox;
+#X connect 5 0 3 0;
+#X connect 6 0 4 0;
+#X connect 7 0 4 0;
+#X connect 8 0 3 0;
+#X connect 9 0 16 0;
+#X connect 9 0 12 0;
+#X connect 9 0 8 0;
+#X connect 9 0 7 0;
+#X connect 9 0 17 0;
+#X connect 9 1 15 0;
+#X connect 9 1 11 0;
+#X connect 9 1 5 0;
+#X connect 9 1 6 0;
+#X connect 9 1 18 0;
+#X connect 10 0 9 0;
+#X connect 11 0 4 0;
+#X connect 12 0 4 0;
+#X connect 15 0 14 0;
+#X connect 15 0 19 0;
+#X connect 16 0 14 0;
+#X connect 16 0 20 0;
+#X connect 19 0 14 0;
+#X connect 20 0 14 0;
+#X connect 21 0 22 0;
+#X coords 0 -1 1 1 45 45 1 100 100;

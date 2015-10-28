@@ -1,0 +1,5 @@
+#N canvas 0 0 450 300 10;
+#X obj 26 82 taplist;
+#X obj 176 165 menubox;
+#X obj 149 38 touch;
+#X obj 218 75 wordbutton;

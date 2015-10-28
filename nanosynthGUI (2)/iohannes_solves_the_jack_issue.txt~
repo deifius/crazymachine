@@ -1,0 +1,2 @@
+pd -alsamidi -mididev 1,1 controltest.pd namechart.pd  fuknwithnanosynth.pd 
+

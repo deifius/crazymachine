@@ -1,0 +1,661 @@
+[g1]		Group A1
+[p2, 0, 0, 0]	Piano 1
+[p2, 1, 0, 0]	Piano 2
+[p2, 2, 0, 0]	Elec Grand
+[p2, 3, 0, 0]	Honky-Tonk
+[p2, 4, 0, 0]	E.Piano 1
+[p2, 5, 0, 0]	E.Piano 2
+[p2, 6, 0, 0]	Harpschrd
+[p2, 7, 0, 0]	Clav
+[p2, 8, 0, 0]	Celeste
+[p2, 9, 0, 0]	Glockenspl
+[p2, 10, 0, 0]	Music Box
+[p2, 11, 0, 0]	Vibes
+[p2, 12, 0, 0]	Marimba
+[p2, 13, 0, 0]	Xylophone
+[p2, 14, 0, 0]	TubularBel
+[p2, 15, 0, 0]	Santur
+[p2, 16, 0, 0]	Organ 1
+[p2, 17, 0, 0]	Organ 2
+[p2, 18, 0, 0]	Organ 3
+[p2, 19, 0, 0]	ChurchOrgn
+[p2, 20, 0, 0]	Reed Organ
+[p2, 21, 0, 0]	Accordian
+[p2, 22, 0, 0]	Harmonica
+[p2, 23, 0, 0]	Bandoneon
+[p2, 24, 0, 0]	Nylon Gtr
+[p2, 25, 0, 0]	Steel Gtr
+[p2, 26, 0, 0]	Jazz Gtr
+[p2, 27, 0, 0]	Clean Gtr
+[p2, 28, 0, 0]	Mute Gtr
+[p2, 29, 0, 0]	Overdrive
+[p2, 30, 0, 0]	Distortion
+[p2, 31, 0, 0]	Gt.Harmnix
+[g1]		Group A2
+[p2, 32, 0, 0]	AcousBass
+[p2, 33, 0, 0]	FingerBass
+[p2, 34, 0, 0]	PickedBass
+[p2, 35, 0, 0]	Fretless
+[p2, 36, 0, 0]	Slap Bass1
+[p2, 37, 0, 0]	Slap Bass2
+[p2, 38, 0, 0]	Syn.Bass 1
+[p2, 39, 0, 0]	Syn.Bass 2
+[p2, 40, 0, 0]	Violin
+[p2, 41, 0, 0]	Viola
+[p2, 42, 0, 0]	Cello
+[p2, 43, 0, 0]	Contrabass
+[p2, 44, 0, 0]	TremoloStr
+[p2, 45, 0, 0]	Pizzicato
+[p2, 46, 0, 0]	Harp
+[p2, 47, 0, 0]	Timpani
+[p2, 48, 0, 0]	Strings
+[p2, 49, 0, 0]	Slo String
+[p2, 50, 0, 0]	SynString1
+[p2, 51, 0, 0]	SynString2
+[p2, 52, 0, 0]	Choir Aahs
+[p2, 53, 0, 0]	Ooh Vox
+[p2, 54, 0, 0]	Synvox
+[p2, 55, 0, 0]	Orchst.Hit
+[p2, 56, 0, 0]	Trumpet
+[p2, 57, 0, 0]	Trombone
+[p2, 58, 0, 0]	Tuba
+[p2, 59, 0, 0]	Mute Trump
+[p2, 60, 0, 0]	FrenchHorn
+[p2, 61, 0, 0]	Brass
+[p2, 62, 0, 0]	Syn.Brass1
+[p2, 63, 0, 0]	Syn.Brass2
+[g1]		Group A3
+[p2, 64, 0, 0]	SopranoSax
+[p2, 65, 0, 0]	Alto Sax
+[p2, 66, 0, 0]	Tenor Sax
+[p2, 67, 0, 0]	Bari Sax
+[p2, 68, 0, 0]	Oboe
+[p2, 69, 0, 0]	EnglishHrn
+[p2, 70, 0, 0]	Bassoon
+[p2, 71, 0, 0]	Clarinet
+[p2, 72, 0, 0]	Piccolo
+[p2, 73, 0, 0]	Flute
+[p2, 74, 0, 0]	Recorder
+[p2, 75, 0, 0]	Pan Flute
+[p2, 76, 0, 0]	BottleBlow
+[p2, 77, 0, 0]	Shakuhachi
+[p2, 78, 0, 0]	Whistle
+[p2, 79, 0, 0]	Ocarina
+[p2, 80, 0, 0]	SquareWave
+[p2, 81, 0, 0]	Saw Wave
+[p2, 82, 0, 0]	Calliope
+[p2, 83, 0, 0]	Chiffer Ld
+[p2, 84, 0, 0]	Charang
+[p2, 85, 0, 0]	Solo Voice
+[p2, 86, 0, 0]	5th Saw
+[p2, 87, 0, 0]	Bass&Lead
+[p2, 88, 0, 0]	Fantasia
+[p2, 89, 0, 0]	Warm Pad
+[p2, 90, 0, 0]	Polysynth
+[p2, 91, 0, 0]	SpaceVoice
+[p2, 92, 0, 0]	BowedGlass
+[p2, 93, 0, 0]	Metal Pad
+[p2, 94, 0, 0]	Halo Pad
+[p2, 95, 0, 0]	Sweep Pad
+[g1]		Group A4
+[p2, 96, 0, 0]	Ice Rain
+[p2, 97, 0, 0]	Soundtrack
+[p2, 98, 0, 0]	Crystal
+[p2, 99, 0, 0]	Atmosphere
+[p2, 100, 0, 0]	Brightness
+[p2, 101, 0, 0]	Goblins
+[p2, 102, 0, 0]	Echo Drops
+[p2, 103, 0, 0]	Star Theme
+[p2, 104, 0, 0]	Sitar
+[p2, 105, 0, 0]	Banjo
+[p2, 106, 0, 0]	Shamisen
+[p2, 107, 0, 0]	Koto
+[p2, 108, 0, 0]	Kalimba
+[p2, 109, 0, 0]	Bagpipe
+[p2, 110, 0, 0]	Fiddle
+[p2, 111, 0, 0]	Shanai
+[p2, 112, 0, 0]	TinkleBell
+[p2, 113, 0, 0]	Agogo
+[p2, 114, 0, 0]	Steel Drum
+[p2, 115, 0, 0]	Wood Block
+[p2, 116, 0, 0]	Taiko
+[p2, 117, 0, 0]	Melo Tom
+[p2, 118, 0, 0]	Synth Drum
+[p2, 119, 0, 0]	ReverseCym
+[p2, 120, 0, 0]	Gt.FretNze
+[p2, 121, 0, 0]	Breath Nze
+[p2, 122, 0, 0]	Seashore
+[p2, 123, 0, 0]	Bird
+[p2, 124, 0, 0]	Telephone
+[p2, 125, 0, 0]	Helicopter
+[p2, 126, 0, 0]	Applause
+[p2, 127, 0, 0]	Gun Shot
+[g1]		Group B1
+[p2, 0, 1, 0]	8va Piano
+[p2, 1, 1, 0]	PianoMorph
+[p2, 2, 1, 0]	Whirl Lee
+[p2, 3, 1, 0]	Player Pno
+[p2, 4, 1, 0]	61 Tines
+[p2, 5, 1, 0]	Rayz Roadz
+[p2, 6, 1, 0]	8'4'Harpsi
+[p2, 7, 1, 0]	Clavitube
+[p2, 8, 1, 0]	Potsticker
+[p2, 9, 1, 0]	AlloyGlock
+[p2, 10, 1, 0]	Charms
+[p2, 11, 1, 0]	Mad Vibes
+[p2, 12, 1, 0]	BasMarimba
+[p2, 13, 1, 0]	Xylobrite
+[p2, 14, 1, 0]	ClockTower
+[p2, 15, 1, 0]	Britecimmr
+[p2, 16, 1, 0]	LFO Lezly
+[p2, 17, 1, 0]	Survival B
+[p2, 18, 1, 0]	High Life
+[p2, 19, 1, 0]	Full Ranks
+[p2, 20, 1, 0]	Gothic Org
+[p2, 21, 1, 0]	ClrAcrdion
+[p2, 22, 1, 0]	WhammerJmr
+[p2, 23, 1, 0]	Palermo
+[p2, 24, 1, 0]	ClassiclAx
+[p2, 25, 1, 0]	SteelUrslf
+[p2, 26, 1, 0]	PedalSteel
+[p2, 27, 1, 0]	818 Guitar
+[p2, 28, 1, 0]	Chunky
+[p2, 29, 1, 0]	Rock Drive
+[p2, 30, 1, 0]	Feedbacker
+[p2, 31, 1, 0]	DstHrmonic
+[g1]		Group B2
+[p2, 32, 1, 0]	BigUpright
+[p2, 33, 1, 0]	Sure Bass
+[p2, 34, 1, 0]	Heavy Bass
+[p2, 35, 1, 0]	No Frets!
+[p2, 36, 1, 0]	Slapstick
+[p2, 37, 1, 0]	Slap It!
+[p2, 38, 1, 0]	Funky Acid
+[p2, 39, 1, 0]	Fat Mini
+[p2, 40, 1, 0]	Stradivari
+[p2, 41, 1, 0]	BiViola
+[p2, 42, 1, 0]	Cello Ros
+[p2, 43, 1, 0]	FusinKntra
+[p2, 44, 1, 0]	TremEnsemb
+[p2, 45, 1, 0]	Pizzicati
+[p2, 46, 1, 0]	HeavenHarp
+[p2, 47, 1, 0]	TimPanic
+[p2, 48, 1, 0]	HugeString
+[p2, 49, 1, 0]	SloOctStrg
+[p2, 50, 1, 0]	SE Motion
+[p2, 51, 1, 0]	Xpando Pad
+[p2, 52, 1, 0]	CloudChoir
+[p2, 53, 1, 0]	VelOoz&Aaz
+[p2, 54, 1, 0]	Nice Voice
+[p2, 55, 1, 0]	Hitz Peak
+[p2, 56, 1, 0]	UseMWandAT
+[p2, 57, 1, 0]	Bone Tone
+[p2, 58, 1, 0]	Hard Tuba
+[p2, 59, 1, 0]	BriteMute
+[p2, 60, 1, 0]	FlugelSolo
+[p2, 61, 1, 0]	EssexBrass
+[p2, 62, 1, 0]	Matrix Brs
+[p2, 63, 1, 0]	El Brasso
+[g1]		Group B3
+[p2, 64, 1, 0]	G. Soprano
+[p2, 65, 1, 0]	Sax Touch
+[p2, 66, 1, 0]	Tenor Solo
+[p2, 67, 1, 0]	SaxSection
+[p2, 68, 1, 0]	Oboe Reed
+[p2, 69, 1, 0]	S.Eng.Horn
+[p2, 70, 1, 0]	DrkBassoon
+[p2, 71, 1, 0]	Clarinet O
+[p2, 72, 1, 0]	Pickle O
+[p2, 73, 1, 0]	LyricFlute
+[p2, 74, 1, 0]	SprnoRcrdr
+[p2, 75, 1, 0]	PanPeople
+[p2, 76, 1, 0]	PlugdBottl
+[p2, 77, 1, 0]	Octohachi
+[p2, 78, 1, 0]	KeyWhistlr
+[p2, 79, 1, 0]	Rugrats
+[p2, 80, 1, 0]	Porta Lead
+[p2, 81, 1, 0]	Quadratix
+[p2, 82, 1, 0]	Triangular
+[p2, 83, 1, 0]	Rez Blastz
+[p2, 84, 1, 0]	Screamer
+[p2, 85, 1, 0]	ShineOn...
+[p2, 86, 1, 0]	Saw 5X
+[p2, 87, 1, 0]	ClassicSqr
+[p2, 88, 1, 0]	Bell Pad
+[p2, 89, 1, 0]	Atlantis
+[p2, 90, 1, 0]	PolySyn
+[p2, 91, 1, 0]	SpaceVocks
+[p2, 92, 1, 0]	Ice-O-tope
+[p2, 93, 1, 0]	Metallic
+[p2, 94, 1, 0]	HiloVolt
+[p2, 95, 1, 0]	7th Wave
+[g1]		Group B4
+[p2, 96, 1, 0]	HeavenCent
+[p2, 97, 1, 0]	Bali Hai
+[p2, 98, 1, 0]	Crystallin
+[p2, 99, 1, 0]	Tropospher
+[p2, 100, 1, 0]	CafeDelMar
+[p2, 101, 1, 0]	Gobbling
+[p2, 102, 1, 0]	Echoes
+[p2, 103, 1, 0]	Moonling
+[p2, 104, 1, 0]	WorldSitar
+[p2, 105, 1, 0]	Ethnoba
+[p2, 106, 1, 0]	MelloShami
+[p2, 107, 1, 0]	Amakudari
+[p2, 108, 1, 0]	Kalimbex
+[p2, 109, 1, 0]	The Moors
+[p2, 110, 1, 0]	Git Fiddle
+[p2, 111, 1, 0]	Shanaye
+[p2, 112, 1, 0]	D4 Pwr Kit
+[p2, 113, 1, 0]	Pop Up Kit
+[p2, 114, 1, 0]	UrbanBliss
+[p2, 115, 1, 0]	Straight 8
+[p2, 116, 1, 0]	9 Time
+[p2, 117, 1, 0]	Techno Kit
+[p2, 118, 1, 0]	IsmellFUNK
+[p2, 119, 1, 0]	Gruvy Lube
+[p2, 120, 1, 0]	Psyclotron
+[p2, 121, 1, 0]	UB Riddim
+[p2, 122, 1, 0]	Crenshaw
+[p2, 123, 1, 0]	Razor Edge
+[p2, 124, 1, 0]	Get On
+[p2, 125, 1, 0]	Herkin It
+[p2, 126, 1, 0]	Caravania
+[p2, 127, 1, 0]	Off
+[g1]		Group C1
+[p2, 0, 2, 0]	Solo Piano
+[p2, 1, 2, 0]	HousePiano
+[p2, 2, 2, 0]	Electratak
+[p2, 3, 2, 0]	SalloonKey
+[p2, 4, 2, 0]	Suitcase
+[p2, 5, 2, 0]	Hard Roads
+[p2, 6, 2, 0]	TrueHarpsi
+[p2, 7, 2, 0]	Clavislap
+[p2, 8, 2, 0]	ShortCeles
+[p2, 9, 2, 0]	Gloknspark
+[p2, 10, 2, 0]	SweetBells
+[p2, 11, 2, 0]	Cool Vibes
+[p2, 12, 2, 0]	MarmbaIsle
+[p2, 13, 2, 0]	Woody Xylo
+[p2, 14, 2, 0]	Tubulous
+[p2, 15, 2, 0]	HamrDulcmr
+[p2, 16, 2, 0]	PrcsvBlues
+[p2, 17, 2, 0]	Vacuum B
+[p2, 18, 2, 0]	BigBadPerc
+[p2, 19, 2, 0]	ChurchPipe
+[p2, 20, 2, 0]	Reed Stops
+[p2, 21, 2, 0]	FrAccrdion
+[p2, 22, 2, 0]	PocketHarp
+[p2, 23, 2, 0]	AhOneAnna2
+[p2, 24, 2, 0]	ThickNylon
+[p2, 25, 2, 0]	DoublSteel
+[p2, 26, 2, 0]	PassGuitar
+[p2, 27, 2, 0]	PulpGuitar
+[p2, 28, 2, 0]	Funky Mute
+[p2, 29, 2, 0]	OvrdriveGt
+[p2, 30, 2, 0]	Rock Lead
+[p2, 31, 2, 0]	ElHarmonic
+[g1]		Group C2
+[p2, 32, 2, 0]	AcousBassV
+[p2, 33, 2, 0]	Deep Bass
+[p2, 34, 2, 0]	Mu Bass
+[p2, 35, 2, 0]	VolumeKnob
+[p2, 36, 2, 0]	FlaminBass
+[p2, 37, 2, 0]	GothamBass
+[p2, 38, 2, 0]	Filter Wow
+[p2, 39, 2, 0]	Hypno Bass
+[p2, 40, 2, 0]	DiamondVln
+[p2, 41, 2, 0]	Solo Viola
+[p2, 42, 2, 0]	DarkrCello
+[p2, 43, 2, 0]	Bass&Cello
+[p2, 44, 2, 0]	TrembleStr
+[p2, 45, 2, 0]	PizzViolin
+[p2, 46, 2, 0]	Soft Harp
+[p2, 47, 2, 0]	Big O Timp
+[p2, 48, 2, 0]	ArcoStrngs
+[p2, 49, 2, 0]	String Pad
+[p2, 50, 2, 0]	J Strings
+[p2, 51, 2, 0]	Ana String
+[p2, 52, 2, 0]	Ooh LaLa
+[p2, 53, 2, 0]	Chiff Oohs
+[p2, 54, 2, 0]	Velocivox
+[p2, 55, 2, 0]	Mortal Hit
+[p2, 56, 2, 0]	TrumpetLyt
+[p2, 57, 2, 0]	Solo Tromb
+[p2, 58, 2, 0]	Big Tuba
+[p2, 59, 2, 0]	Jazz Mute
+[p2, 60, 2, 0]	FHrn Ens
+[p2, 61, 2, 0]	BrassTouch
+[p2, 62, 2, 0]	Sfz Brass
+[p2, 63, 2, 0]	FiltrSynth
+[g1]		Group C3
+[p2, 64, 2, 0]	Saxette
+[p2, 65, 2, 0]	Spit Alto
+[p2, 66, 2, 0]	BreathySax
+[p2, 67, 2, 0]	Big O Bari
+[p2, 68, 2, 0]	Oboe Blow
+[p2, 69, 2, 0]	London Fog
+[p2, 70, 2, 0]	SoloBasoon
+[p2, 71, 2, 0]	1stClarnet
+[p2, 72, 2, 0]	Pick-a-low
+[p2, 73, 2, 0]	MoodyFlute
+[p2, 74, 2, 0]	SftRecordr
+[p2, 75, 2, 0]	Panz Flute
+[p2, 76, 2, 0]	BottledAir
+[p2, 77, 2, 0]	Phat Pipe
+[p2, 78, 2, 0]	Whistral
+[p2, 79, 2, 0]	OcariNoir
+[p2, 80, 2, 0]	SquareLead
+[p2, 81, 2, 0]	Saw Lead
+[p2, 82, 2, 0]	SynCalliop
+[p2, 83, 2, 0]	Zip Lead
+[p2, 84, 2, 0]	Boiled Gtr
+[p2, 85, 2, 0]	Solo Vocks
+[p2, 86, 2, 0]	King 5th
+[p2, 87, 2, 0]	Low&High
+[p2, 88, 2, 0]	Marimpanad
+[p2, 89, 2, 0]	Cool Pad
+[p2, 90, 2, 0]	Poly-gone
+[p2, 91, 2, 0]	BrezyChoir
+[p2, 92, 2, 0]	Bo's Glass
+[p2, 93, 2, 0]	Tal Pad
+[p2, 94, 2, 0]	Holo Pad
+[p2, 95, 2, 0]	Sweep Up
+[g1]		Group C4
+[p2, 96, 2, 0]	Comet Rain
+[p2, 97, 2, 0]	SuperScore
+[p2, 98, 2, 0]	Aluminum
+[p2, 99, 2, 0]	Atmosfear
+[p2, 100, 2, 0]	Brighter
+[p2, 101, 2, 0]	Elves
+[p2, 102, 2, 0]	EffectRetn
+[p2, 103, 2, 0]	Sci-Fi
+[p2, 104, 2, 0]	Sitar Buzz
+[p2, 105, 2, 0]	BanjoDual
+[p2, 106, 2, 0]	Shamijo
+[p2, 107, 2, 0]	Soft Koto
+[p2, 108, 2, 0]	Kalidark
+[p2, 109, 2, 0]	Bag O'pipe
+[p2, 110, 2, 0]	Violin Ace
+[p2, 111, 2, 0]	Shan'sReed
+[p2, 112, 2, 0]	Real Rock
+[p2, 113, 2, 0]	Dry70'sKit
+[p2, 114, 2, 0]	Hipp Kitt
+[p2, 115, 2, 0]	Bomb Kit
+[p2, 116, 2, 0]	HardcorKit
+[p2, 117, 2, 0]	Club Kit
+[p2, 118, 2, 0]	Old School
+[p2, 119, 2, 0]	Destructo!
+[p2, 120, 2, 0]	Swamp Goop
+[p2, 121, 2, 0]	Dub Lander
+[p2, 122, 2, 0]	Sweat
+[p2, 123, 2, 0]	Nodes
+[p2, 124, 2, 0]	Git Along
+[p2, 125, 2, 0]	Danger Tip
+[p2, 126, 2, 0]	Nanites
+[p2, 127, 2, 0]	Cricketry
+[g1]		Group D1
+[p2, 0, 3, 0]	ClasclGrnd
+[p2, 1, 3, 0]	HyperPiano
+[p2, 2, 3, 0]	Syn Piano
+[p2, 3, 3, 0]	Balladeer
+[p2, 4, 3, 0]	Nice Tines
+[p2, 5, 3, 0]	Smooth EP
+[p2, 6, 3, 0]	Octachord
+[p2, 7, 3, 0]	ProfitClav
+[p2, 8, 3, 0]	FairyBellz
+[p2, 9, 3, 0]	GlassBells
+[p2, 10, 3, 0]	Clear Bell
+[p2, 11, 3, 0]	Vibraphone
+[p2, 12, 3, 0]	Wood Sign
+[p2, 13, 3, 0]	Steelophon
+[p2, 14, 3, 0]	Tubularis
+[p2, 15, 3, 0]	Dulcioto
+[p2, 16, 3, 0]	DrawbarCtl
+[p2, 17, 3, 0]	MW Organ
+[p2, 18, 3, 0]	ToneWhlPrc
+[p2, 19, 3, 0]	BritePipes
+[p2, 20, 3, 0]	DigiPump
+[p2, 21, 3, 0]	WrmAcrdion
+[p2, 22, 3, 0]	F-harmonca
+[p2, 23, 3, 0]	DarkHrmnca
+[p2, 24, 3, 0]	Flamenco 6
+[p2, 25, 3, 0]	Acous6Strg
+[p2, 26, 3, 0]	HawaiianGt
+[p2, 27, 3, 0]	CountryGtr
+[p2, 28, 3, 0]	Total Chug
+[p2, 29, 3, 0]	TurboCtrlC
+[p2, 30, 3, 0]	DistortdGt
+[p2, 31, 3, 0]	AcHarmonic
+[g1]		Group D2
+[p2, 32, 3, 0]	FatUpright
+[p2, 33, 3, 0]	Face Bass
+[p2, 34, 3, 0]	SharpStick
+[p2, 35, 3, 0]	SmoothNeck
+[p2, 36, 3, 0]	Popless
+[p2, 37, 3, 0]	Pop'n Bass
+[p2, 38, 3, 0]	LatelyBass
+[p2, 39, 3, 0]	TranceBass
+[p2, 40, 3, 0]	Violiner
+[p2, 41, 3, 0]	C-Bs&Viola
+[p2, 42, 3, 0]	CelloRound
+[p2, 43, 3, 0]	Celli
+[p2, 44, 3, 0]	StringAura
+[p2, 45, 3, 0]	Pizz Pluck
+[p2, 46, 3, 0]	Harpitz
+[p2, 47, 3, 0]	TrashyTimp
+[p2, 48, 3, 0]	Concerto
+[p2, 49, 3, 0]	Slow 8s
+[p2, 50, 3, 0]	AnaStrEnsm
+[p2, 51, 3, 0]	Syn Arcos
+[p2, 52, 3, 0]	MorphChoir
+[p2, 53, 3, 0]	Hen-Ya
+[p2, 54, 3, 0]	Air Choir
+[p2, 55, 3, 0]	Danz Hitz
+[p2, 56, 3, 0]	SynTrumpet
+[p2, 57, 3, 0]	Tromb Ens
+[p2, 58, 3, 0]	Round Tuba
+[p2, 59, 3, 0]	Orch Mutes
+[p2, 60, 3, 0]	HornExpans
+[p2, 61, 3, 0]	Stab Brass
+[p2, 62, 3, 0]	Mighty5ths
+[p2, 63, 3, 0]	Ooh Horns
+[g1]		Group D3
+[p2, 64, 3, 0]	LiteSoprno
+[p2, 65, 3, 0]	Alto Swing
+[p2, 66, 3, 0]	Throat Sax
+[p2, 67, 3, 0]	Sam's Sax
+[p2, 68, 3, 0]	Ebony Oboe
+[p2, 69, 3, 0]	StatelyOrc
+[p2, 70, 3, 0]	Fhorn&Bssn
+[p2, 71, 3, 0]	Dixi Brass
+[p2, 72, 3, 0]	Pic-a-fife
+[p2, 73, 3, 0]	Deep Flute
+[p2, 74, 3, 0]	SingleFlut
+[p2, 75, 3, 0]	Hard Pipes
+[p2, 76, 3, 0]	Bottle Pad
+[p2, 77, 3, 0]	NativeFlut
+[p2, 78, 3, 0]	Wistelaan
+[p2, 79, 3, 0]	Slippery
+[p2, 80, 3, 0]	RaveSqrQS6
+[p2, 81, 3, 0]	RaveSawQS6
+[p2, 82, 3, 0]	Syn Circus
+[p2, 83, 3, 0]	Analogist
+[p2, 84, 3, 0]	Haurang
+[p2, 85, 3, 0]	Voice Lead
+[p2, 86, 3, 0]	Brassy 5th
+[p2, 87, 3, 0]	Led Bass
+[p2, 88, 3, 0]	Pluck Pad
+[p2, 89, 3, 0]	Swell Pad
+[p2, 90, 3, 0]	Air Pad MW
+[p2, 91, 3, 0]	Voice Bell
+[p2, 92, 3, 0]	Tranzcndnt
+[p2, 93, 3, 0]	BladeRunnr
+[p2, 94, 3, 0]	Hilo Pad
+[p2, 95, 3, 0]	E Sweep
+[g1]		Group D4
+[p2, 96, 3, 0]	Acid Rain
+[p2, 97, 3, 0]	Legendary
+[p2, 98, 3, 0]	Strukit
+[p2, 99, 3, 0]	Strafing
+[p2, 100, 3, 0]	GldnFleece
+[p2, 101, 3, 0]	Nitrous
+[p2, 102, 3, 0]	HighGlissz
+[p2, 103, 3, 0]	Moon&Womb
+[p2, 104, 3, 0]	Atmossitar
+[p2, 105, 3, 0]	DownYonder
+[p2, 106, 3, 0]	Shame-isen
+[p2, 107, 3, 0]	Kotobaba
+[p2, 108, 3, 0]	Chasers
+[p2, 109, 3, 0]	Bagboe
+[p2, 110, 3, 0]	ZizzViolin
+[p2, 111, 3, 0]	Tom'sO'Man
+[p2, 112, 3, 0]	Ambi Rock
+[p2, 113, 3, 0]	Trashy Kit
+[p2, 114, 3, 0]	T Funk Era
+[p2, 115, 3, 0]	PiqueDrumz
+[p2, 116, 3, 0]	Harlem Tek
+[p2, 117, 3, 0]	Big Dance
+[p2, 118, 3, 0]	15ips Kit
+[p2, 119, 3, 0]	Asylum Kit
+[p2, 120, 3, 0]	Bonk
+[p2, 121, 3, 0]	Go On
+[p2, 122, 3, 0]	Donut Shop
+[p2, 123, 3, 0]	Abuser
+[p2, 124, 3, 0]	Dino + Dog
+[p2, 125, 3, 0]	Fried
+[p2, 126, 3, 0]	Insectagon
+[p2, 127, 3, 0]	TseTse Fly
+[g1]		Group E1
+[p2, 0, 4, 0]	GrandPiano
+[p2, 1, 4, 0]	DancePiano
+[p2, 2, 4, 0]	EGrd & Pad
+[p2, 3, 4, 0]	DirtyWurly
+[p2, 4, 4, 0]	Mars E Pno
+[p2, 5, 4, 0]	SuperRoadz
+[p2, 6, 4, 0]	Ana Harpsi
+[p2, 7, 4, 0]	Digi Clav
+[p2, 8, 4, 0]	Chiff Bell
+[p2, 9, 4, 0]	Tambigloxx
+[p2, 10, 4, 0]	Basic Bell
+[p2, 11, 4, 0]	MorphBells
+[p2, 12, 4, 0]	Bellarimba
+[p2, 13, 4, 0]	Brake Drum
+[p2, 14, 4, 0]	Watercan
+[p2, 15, 4, 0]	Lunk Harp
+[p2, 16, 4, 0]	ShadeOpale
+[p2, 17, 4, 0]	Eng Organ
+[p2, 18, 4, 0]	BlueZorgan
+[p2, 19, 4, 0]	SftPipeOrg
+[p2, 20, 4, 0]	MellowPump
+[p2, 21, 4, 0]	One Accord
+[p2, 22, 4, 0]	BzzHarmnca
+[p2, 23, 4, 0]	SynAccrdn
+[p2, 24, 4, 0]	Nylon&Oohs
+[p2, 25, 4, 0]	FolkBarGtr
+[p2, 26, 4, 0]	GuitarPoem
+[p2, 27, 4, 0]	Royal Coil
+[p2, 28, 4, 0]	TreMellow
+[p2, 29, 4, 0]	CoralLezli
+[p2, 30, 4, 0]	HeroHarmnx
+[p2, 31, 4, 0]	Strummers
+[g1]		Group E2
+[p2, 32, 4, 0]	ArndsHouse
+[p2, 33, 4, 0]	Octaver
+[p2, 34, 4, 0]	007 Bass
+[p2, 35, 4, 0]	Fretlissyn
+[p2, 36, 4, 0]	Dist Bass
+[p2, 37, 4, 0]	Slappers
+[p2, 38, 4, 0]	Dee X Bass
+[p2, 39, 4, 0]	PsychoBass
+[p2, 40, 4, 0]	Fusion Vln
+[p2, 41, 4, 0]	Fusion Vla
+[p2, 42, 4, 0]	Dark Cello
+[p2, 43, 4, 0]	Kontrabass
+[p2, 44, 4, 0]	J Str Trem
+[p2, 45, 4, 0]	SpacePluck
+[p2, 46, 4, 0]	Waterfalls
+[p2, 47, 4, 0]	Strng&Timp
+[p2, 48, 4, 0]	OctoString
+[p2, 49, 4, 0]	Orchestrar
+[p2, 50, 4, 0]	VintageStr
+[p2, 51, 4, 0]	Obersphere
+[p2, 52, 4, 0]	Afterglow
+[p2, 53, 4, 0]	Sunsrizer
+[p2, 54, 4, 0]	GlideVoxMW
+[p2, 55, 4, 0]	Deja Hitz
+[p2, 56, 4, 0]	TrumpletMW
+[p2, 57, 4, 0]	Fanfare
+[p2, 58, 4, 0]	ClsclHorns
+[p2, 59, 4, 0]	Mute&Flute
+[p2, 60, 4, 0]	Documentar
+[p2, 61, 4, 0]	BriteBrass
+[p2, 62, 4, 0]	BeBopHorns
+[p2, 63, 4, 0]	Kick Brass
+[g1]		Group E3
+[p2, 64, 4, 0]	Pastorale
+[p2, 65, 4, 0]	Sexy Sax
+[p2, 66, 4, 0]	Sax on Wax
+[p2, 67, 4, 0]	ThoseSaxes
+[p2, 68, 4, 0]	Wind Ensmb
+[p2, 69, 4, 0]	Orchestr8
+[p2, 70, 4, 0]	Oddsemble
+[p2, 71, 4, 0]	Cartoonin'
+[p2, 72, 4, 0]	TronFlutes
+[p2, 73, 4, 0]	ChiffFlute
+[p2, 74, 4, 0]	The Bosun
+[p2, 75, 4, 0]	Shamanixst
+[p2, 76, 4, 0]	BlowDeTune
+[p2, 77, 4, 0]	FluteEnsem
+[p2, 78, 4, 0]	Nautical
+[p2, 79, 4, 0]	PanBristle
+[p2, 80, 4, 0]	3oh3 SqrMW
+[p2, 81, 4, 0]	3oh3 SawMW
+[p2, 82, 4, 0]	Digidee
+[p2, 83, 4, 0]	ChiffLeads
+[p2, 84, 4, 0]	FatAnaLead
+[p2, 85, 4, 0]	Applewine
+[p2, 86, 4, 0]	I Saw 5
+[p2, 87, 4, 0]	Blacksmith
+[p2, 88, 4, 0]	Gothos
+[p2, 89, 4, 0]	Holla Pad
+[p2, 90, 4, 0]	Digiculver
+[p2, 91, 4, 0]	Scarlette
+[p2, 92, 4, 0]	SftScience
+[p2, 93, 4, 0]	Illusions
+[p2, 94, 4, 0]	VoltagePad
+[p2, 95, 4, 0]	Ascent
+[g1]		Group E4
+[p2, 96, 4, 0]	Dew Drops
+[p2, 97, 4, 0]	Ocean Mood
+[p2, 98, 4, 0]	Helical
+[p2, 99, 4, 0]	PhaseArray
+[p2, 100, 4, 0]	Romulux
+[p2, 101, 4, 0]	Hyperspace
+[p2, 102, 4, 0]	Intertwine
+[p2, 103, 4, 0]	Spaceport
+[p2, 104, 4, 0]	Raga No.1
+[p2, 105, 4, 0]	Ethnicity
+[p2, 106, 4, 0]	Toru
+[p2, 107, 4, 0]	Ethnotal
+[p2, 108, 4, 0]	Kalimpanad
+[p2, 109, 4, 0]	Bags
+[p2, 110, 4, 0]	Violin Orc
+[p2, 111, 4, 0]	1001Nights
+[p2, 112, 4, 0]	Cirque
+[p2, 113, 4, 0]	Agogo Gone
+[p2, 114, 4, 0]	SteelDrama
+[p2, 115, 4, 0]	WdBlockage
+[p2, 116, 4, 0]	KodoDrummr
+[p2, 117, 4, 0]	MelodicTom
+[p2, 118, 4, 0]	WhistlDrum
+[p2, 119, 4, 0]	ReverseRap
+[p2, 120, 4, 0]	Gutteral
+[p2, 121, 4, 0]	ThatCoyote
+[p2, 122, 4, 0]	T I M E !
+[p2, 123, 4, 0]	Heartbeat
+[p2, 124, 4, 0]	Laboratory
+[p2, 125, 4, 0]	Nostromo
+[p2, 126, 4, 0]	1stContact
+[p2, 127, 4, 0]	Final Dawn
+[end]

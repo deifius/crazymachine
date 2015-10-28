@@ -1,0 +1,27 @@
+<!DOCTYPE patchbay>
+<patchbay version="0.3.7" name="Patch">
+ <output-sockets>
+  <socket exclusive="off" client="Midi Through" type="midi" name="Midi Through">
+   <plug>Midi Through Port-0</plug>
+  </socket>
+  <socket exclusive="off" client="USB Midi        " type="midi" name="Right">
+   <plug>USB Midi        Quadra</plug>
+   <plug>USB Midi         MS2K</plug>
+  </socket>
+ </output-sockets>
+ <input-sockets>
+  <socket exclusive="off" client="Midi Through" type="midi" name="Midi Through">
+   <plug>Midi Through Port-0</plug>
+  </socket>
+  <socket exclusive="off" client="USB Midi        " type="midi" name="USB Midi        ">
+   <plug>USB Midi         MIDI 1</plug>
+   <plug>USB Midi         MIDI 1</plug>
+  </socket>
+ </input-sockets>
+ <slots/>
+ <cables>
+  <cable output="Right" input="USB Midi        "/>
+  <cable output="Right" input="Midi Through"/>
+ </cables>
+</patchbay>
+

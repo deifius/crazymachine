@@ -1,0 +1,109 @@
+#N canvas 527 146 1171 846 10;
+#X obj 308 479 dac~;
+#X obj 309 450 osc~;
+#X obj 309 -21 metro;
+#X obj 309 2 f;
+#X obj 309 -55 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 340 1 + 1;
+#X obj 309 48 hradio 15 1 0 4 empty empty empty 0 -8 0 10 -260097 -1
+-1 2;
+#X obj 309 332 f;
+#X obj 309 428 mtof;
+#X obj 377 160 vsl 15 128 40 80 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 888 1;
+#X obj 309 26 mod 4;
+#X obj 520 158 vsl 15 128 20 80 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 11823 1;
+#X obj 691 161 vsl 15 128 40 100 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 3501 1;
+#X obj 852 162 vsl 15 128 20 40 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 12700 1;
+#X obj 465 332 f;
+#X obj 621 333 f;
+#X obj 789 333 f;
+#X obj 309 112 random 10;
+#X obj 309 -81 loadbang;
+#X obj 465 112 random 20;
+#X floatatom 502 348 5 0 0 0 - - -;
+#X floatatom 363 444 5 0 0 0 - - -;
+#X obj 309 298 expr sin((2+$f1)*$f2)+$f2;
+#X obj 465 298 expr cos((2-$f1)*$f2)+$f2;
+#X obj 621 298 expr tan((2-$f1)*$f2) + $f2;
+#X obj 621 112 random 25;
+#X msg 364 -49 100;
+#X obj 462 -50 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 495 -49 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 527 -49 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 559 -49 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 789 112 random 28;
+#X floatatom 338 348 5 0 0 0 - - -;
+#X obj 789 298 expr atan((2+$f1)/$f2) + $f2;
+#X obj 309 70 sel 3 1 0 2;
+#X floatatom 653 349 5 0 0 0 - - -;
+#X floatatom 822 349 5 0 0 0 - - -;
+#X msg 218 -40 \; pd dsp \$1;
+#X text 344 472 by drnn1076 Nov.2011 www.pktweb.com;
+#X msg 461 2 10;
+#X msg 495 2 20;
+#X msg 527 2 25;
+#X msg 559 2 50;
+#X connect 1 0 0 0;
+#X connect 1 0 0 1;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 3 0 10 0;
+#X connect 4 0 2 0;
+#X connect 4 0 37 0;
+#X connect 5 0 3 1;
+#X connect 6 0 34 0;
+#X connect 7 0 8 0;
+#X connect 7 0 32 0;
+#X connect 8 0 1 0;
+#X connect 8 0 21 0;
+#X connect 9 0 22 1;
+#X connect 10 0 6 0;
+#X connect 11 0 23 1;
+#X connect 12 0 24 1;
+#X connect 13 0 33 1;
+#X connect 14 0 8 0;
+#X connect 14 0 20 0;
+#X connect 15 0 8 0;
+#X connect 15 0 35 0;
+#X connect 16 0 8 0;
+#X connect 16 0 36 0;
+#X connect 17 0 22 0;
+#X connect 18 0 26 0;
+#X connect 18 0 4 0;
+#X connect 19 0 23 0;
+#X connect 22 0 7 0;
+#X connect 22 0 9 0;
+#X connect 23 0 14 0;
+#X connect 23 0 11 0;
+#X connect 24 0 15 0;
+#X connect 24 0 12 0;
+#X connect 25 0 24 0;
+#X connect 26 0 2 1;
+#X connect 27 0 39 0;
+#X connect 28 0 40 0;
+#X connect 29 0 41 0;
+#X connect 30 0 42 0;
+#X connect 31 0 33 0;
+#X connect 33 0 16 0;
+#X connect 33 0 13 0;
+#X connect 34 0 17 0;
+#X connect 34 0 29 0;
+#X connect 34 1 19 0;
+#X connect 34 1 27 0;
+#X connect 34 2 25 0;
+#X connect 34 2 28 0;
+#X connect 34 3 30 0;
+#X connect 34 3 31 0;
+#X connect 39 0 2 1;
+#X connect 40 0 2 1;
+#X connect 41 0 2 1;
+#X connect 42 0 2 1;

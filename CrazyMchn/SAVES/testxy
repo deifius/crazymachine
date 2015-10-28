@@ -1,0 +1,13 @@
+wavpreset 1;
+Volume 0.138365;
+FreqLFOIO 0;
+whitenoise 0;
+FreqLFOPitch 0;
+RangeLFOPitch 0;
+LFOPitchFB 0;
+FreqOsc 20;
+TempoOsc 39;
+TempoLFOIO 1;
+LFOTempoFreq 1.37838;
+TempoFB 12.973;
+LFOTempoRange 300;

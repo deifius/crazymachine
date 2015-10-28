@@ -1,0 +1,14 @@
+#N canvas 4 50 450 300 10;
+#X obj 261 81 notein;
+#X obj 275 218 netsend;
+#X msg 281 179 connect localhost 10666;
+#X obj 250 127 pack f f;
+#X msg 215 153 send \$1 \$2 \;;
+#X msg 353 206 disconnect;
+#X obj 168 263 noteout 2;
+#X connect 0 0 3 0;
+#X connect 0 1 3 1;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 4 0 1 0;
+#X connect 5 0 1 0;

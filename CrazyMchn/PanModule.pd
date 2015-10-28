@@ -1,0 +1,52 @@
+#N canvas 246 256 208 107 10;
+#X obj 3 2 cnv 15 192 82 fast clov PAN 6 62 0 34 -233017 -66577 0;
+#X obj 80 52 tgl 30 0 FIRSTPanLFOIO 2FIRSTPanLFOIO empty 0 -6 0 8 -262144
+-1 -1 0 57.0787;
+#X obj 114 6 vsl 35 75 0 2 0 0 LFOPanFreqFIRST 2LFOPanFreqFIRST empty
+0 -8 0 8 -262144 -1 -1 0 1;
+#X obj 154 7 vsl 35 75 0 50 0 0 LFOPanRangeFIRST 2LFOPanRangeFIRST
+empty 0 -8 0 8 -262144 -1 -1 0 1;
+#X text 118 82 Freq;
+#X text 154 82 Range;
+#X obj 16 4 hsl 90 34 0 127 0 0 pansetFIRST 2pansetFIRST empty -2 -6
+0 8 -262144 -1 -1 0 1;
+#X text 83 83 LFO;
+#N canvas 0 22 482 332 panpot 0;
+#X obj 105 47 inlet~;
+#X obj 269 46 inlet;
+#X obj 90 168 *~;
+#X obj 304 166 *~;
+#X obj 280 78 / 127;
+#X obj 187 134 - 1;
+#X obj 186 157 * -1;
+#X obj 133 250 outlet~;
+#X obj 276 254 outlet~;
+#X obj 182 26 loadbang;
+#X msg 182 47 0.5;
+#X obj 362 147 s panrecFIRST;
+#X msg 358 118 63;
+#X connect 0 0 3 0;
+#X connect 0 0 2 0;
+#X connect 1 0 4 0;
+#X connect 2 0 8 0;
+#X connect 3 0 7 0;
+#X connect 4 0 3 1;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 2 1;
+#X connect 9 0 10 0;
+#X connect 10 0 2 1;
+#X connect 10 0 3 1;
+#X connect 12 0 11 0;
+#X restore 312 105 pd panpot;
+#X obj 304 68 inlet~;
+#X obj 296 143 outlet~;
+#X obj 366 143 outlet~;
+#X obj 379 66 inlet;
+#X text 357 32 midi pan \, 63 is center;
+#X text 396 47 (0-127);
+#X connect 8 0 10 0;
+#X connect 8 1 11 0;
+#X connect 9 0 8 0;
+#X connect 12 0 8 1;
+#X coords 0 0 1 1 200 140 1;

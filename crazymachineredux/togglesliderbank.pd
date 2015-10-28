@@ -1,0 +1,9 @@
+#N canvas 0 0 450 300 10;
+#X obj 133 94 toggleslider;
+#X obj 133 77 toggleslider;
+#X obj 133 128 toggleslider;
+#X obj 133 111 toggleslider;
+#X obj 133 162 toggleslider;
+#X obj 133 145 toggleslider;
+#X obj 133 196 toggleslider;
+#X obj 133 179 toggleslider;

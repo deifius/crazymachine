@@ -1,0 +1,84 @@
+#N canvas 111 107 806 352 10;
+#X obj 296 198 delread~ \$0-crac;
+#X obj 76 260 inlet~;
+#X obj 296 310 outlet~;
+#X obj 296 56 inlet;
+#X obj 296 120 unpack;
+#X text 289 36 pack (DelTime)(FB Coef);
+#X obj 310 225 *~ 0;
+#X obj 325 254 throw~ \$0-FBCoef;
+#X obj 20 236 catch~ \$0-FBCoef;
+#X obj 466 198 delread~ \$0-crac;
+#X obj 466 310 outlet~;
+#X obj 466 56 inlet;
+#X obj 466 120 unpack;
+#X text 459 36 pack (DelTime)(FB Coef);
+#X obj 480 225 *~ 0;
+#X obj 495 254 throw~ \$0-FBCoef;
+#X obj 646 198 delread~ \$0-crac;
+#X obj 646 310 outlet~;
+#X obj 646 56 inlet;
+#X obj 646 120 unpack;
+#X text 639 36 pack (DelTime)(FB Coef);
+#X obj 660 225 *~ 0;
+#X obj 675 254 throw~ \$0-FBCoef;
+#X obj 5 5 cnv 15 200 115 empty empty 3TapDelayBox 4 8 0 15 -44926
+-33289 0;
+#X obj 77 287 delwrite~ \$0-crac 10000;
+#X obj 5 24 cnv 15 100 60 empty empty (!>10seconds) 0 0 0 12 -44926
+-66577 0;
+#X obj 36 34 hsl 160 12 10 10000 1 0 \$0-delwrit1 \$0-deltime1 empty
+-2 -8 0 10 -262144 -1 -1 8500 1;
+#X obj 36 49 hsl 160 12 10 10000 1 0 \$0-delwrit2 \$0-deltime2 empty
+-2 -8 0 10 -262144 -1 -1 6000 1;
+#X obj 36 64 hsl 160 12 10 10000 1 0 \$0-delwrit3 \$0-deltime3 empty
+-2 -8 0 10 -262144 -1 -1 12600 1;
+#X obj 178 30 cnv 1 1 45 empty empty 5 0 -2 0 9 -1 -66577 0;
+#X obj 195 30 cnv 1 1 45 empty empty 10 -3 -2 0 9 -33289 -66577 0;
+#X obj 141 31 cnv 1 1 45 empty empty 1 0 -2 0 9 -1 -66577 0;
+#X obj 235 148 s \$0-deltime1;
+#X obj 420 146 s \$0-deltime2;
+#X obj 590 146 s \$0-deltime3;
+#X obj 234 172 r \$0-delwrit1;
+#X obj 427 167 r \$0-delwrit2;
+#X obj 614 172 r \$0-delwrit3;
+#X obj 34 81 vsl 52 30 0.0099 0.99 1 0 \$0-FBpass1 \$0-FB1 empty 0
+-9 0 10 -262144 -1 -1 2900 1;
+#X obj 90 81 vsl 52 30 0.0099 0.99 1 0 \$0-FBpass2 \$0-FB2 empty 0
+-9 0 10 -262144 -1 -1 0 1;
+#X obj 146 81 vsl 52 30 0.0099 0.99 1 0 \$0-FBpass3 \$0-FB3 empty 0
+-9 0 10 -262144 -1 -1 0 1;
+#X obj 109 31 cnv 1 1 45 empty empty 1/4 0 -2 0 9 -1 -66577 0;
+#X obj 336 169 r \$0-FBpass1;
+#X obj 336 149 s \$0-FB1;
+#X obj 522 146 s \$0-FB2;
+#X obj 522 166 r \$0-FBpass2;
+#X obj 712 146 s \$0-FB3;
+#X obj 712 166 r \$0-FBpass3;
+#X connect 0 0 2 0;
+#X connect 0 0 6 0;
+#X connect 1 0 24 0;
+#X connect 3 0 4 0;
+#X connect 4 0 32 0;
+#X connect 4 1 43 0;
+#X connect 6 0 7 0;
+#X connect 8 0 24 0;
+#X connect 9 0 10 0;
+#X connect 9 0 14 0;
+#X connect 11 0 12 0;
+#X connect 12 0 33 0;
+#X connect 12 1 44 0;
+#X connect 14 0 15 0;
+#X connect 16 0 17 0;
+#X connect 16 0 21 0;
+#X connect 18 0 19 0;
+#X connect 19 0 34 0;
+#X connect 19 1 46 0;
+#X connect 21 0 22 0;
+#X connect 35 0 0 0;
+#X connect 36 0 9 0;
+#X connect 37 0 16 0;
+#X connect 42 0 6 1;
+#X connect 45 0 14 1;
+#X connect 47 0 21 1;
+#X coords 0 -1 1 1 200 115 2 5 5;

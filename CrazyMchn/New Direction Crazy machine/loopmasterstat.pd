@@ -1,0 +1,84 @@
+#N canvas 325 87 675 607 10;
+#X obj 352 404 realtime;
+#X obj 186 326 inlet~;
+#X obj 289 270 inlet;
+#X obj 216 533 outlet~;
+#X msg 307 532 start;
+#X obj 188 371 *~ 0;
+#X obj 266 445 *~ 0;
+#X msg 332 382 1;
+#X msg 315 423 0;
+#X obj 216 500 delread~ \$0-qual 16000;
+#X obj 175 401 delwrite~ \$0-qual 32000;
+#X obj 463 251 soundfiler;
+#X msg 443 478 \; Sample resize \$1 \;;
+#X obj 367 527 tabwrite~ Sample;
+#X obj 443 457 * 44100;
+#X msg 456 227 write -aiff \$1 Sample;
+#X obj 448 181 savepanel;
+#X obj 437 141 r \$0-Press;
+#X obj 5 5 cnv 15 168 94 empty empty MasterLoop 40 8 0 14 -153152 -262144
+0;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array Sample 467 float 3;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#X coords 0 1 467 -1 168 100 1;
+#X restore 5 114 graph;
+#X obj 8 214 hsl 163 15 0 127 0 0 \$0-Time \$0-2Time empty -2 -8 0
+10 -262144 -1 -1 0 1;
+#X obj 144 88 bng 15 250 50 0 \$0-Press \$0-2Press Save -3 -6 0 10
+-262144 -1 -1;
+#X obj 474 411 samplerate~;
+#X floatatom 477 433 5 0 0 0 - - -;
+#X obj 361 427 t b b b f f b;
+#X obj 10 26 vradio 15 1 0 3 \$0-Record \$0-2Record empty 0 -8 0 10
+-262144 -1 -1 2;
+#X obj 288 290 s \$0-2Record;
+#X obj 284 311 r \$0-2Record;
+#X text 329 255 0 idle;
+#X text 329 264 1 record loop;
+#X text 329 274 2 play;
+#X obj 372 372 sel 1 0 2;
+#X text 26 27 idle;
+#X text 26 41 record;
+#X text 26 55 loop;
+#X connect 0 0 24 0;
+#X connect 1 0 5 0;
+#X connect 2 0 26 0;
+#X connect 4 0 13 0;
+#X connect 5 0 10 0;
+#X connect 6 0 10 0;
+#X connect 7 0 6 1;
+#X connect 8 0 6 1;
+#X connect 9 0 3 0;
+#X connect 9 0 6 0;
+#X connect 9 0 13 0;
+#X connect 14 0 12 0;
+#X connect 15 0 11 0;
+#X connect 16 0 15 0;
+#X connect 17 0 16 0;
+#X connect 22 0 23 0;
+#X connect 23 0 14 1;
+#X connect 24 1 4 0;
+#X connect 24 3 9 0;
+#X connect 24 4 14 0;
+#X connect 24 5 22 0;
+#X connect 27 0 31 0;
+#X connect 31 0 0 0;
+#X connect 31 0 8 0;
+#X connect 31 1 0 1;
+#X connect 31 1 7 0;
+#X coords 0 -1 1 1 168 224 2 5 5;

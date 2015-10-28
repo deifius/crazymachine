@@ -1,0 +1,27 @@
+#N canvas 250 202 474 324 10;
+#X obj 103 100 cnv 1 1 1 empty \$0-colorz empty 20 12 0 14 -253953
+-262144 0;
+#X obj 253 221 s \$0-colorz;
+#X msg 253 190 color \$1;
+#X msg 253 163 47;
+#X obj 285 86 bang~;
+#X obj 253 65 metro 1000;
+#X obj 253 25 loadbang;
+#X msg 253 45 1;
+#X msg 285 164 73;
+#X obj 347 83 switch~;
+#X msg 347 61 set 1024 1 1;
+#X obj 101 100 cnv 1 1 1 empty \$0-colorz empty 20 12 0 14 -44926 -262144
+0;
+#X obj 107 100 cnv 1 1 1 empty \$0-colorz empty 20 12 0 14 -253953
+-262144 0;
+#X obj 105 100 cnv 1 1 1 empty \$0-colorz empty 20 12 0 14 -44926 -262144
+0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 6 0 7 0;
+#X connect 7 0 5 0;
+#X connect 7 0 10 0;
+#X connect 8 0 2 0;
+#X connect 10 0 9 0;
+#X coords 0 -1 1 1 8 1 2 100 100;

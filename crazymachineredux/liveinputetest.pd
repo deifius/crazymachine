@@ -1,0 +1,25 @@
+#N canvas 5 47 1011 682 10;
+#X obj 137 632 dac~;
+#X obj 399 325 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 412 367 lim;
+#X obj 364 94 specmash;
+#X obj 369 210 3tapdelay;
+#X obj 318 498 specmash;
+#X obj 24 381 specmash;
+#X obj 191 62 adc~;
+#X obj 513 459 s~ throwack;
+#X obj 35 99 r~ throwback;
+#X obj 77 159 3tapdelay;
+#X connect 3 0 0 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 4 1 5 0;
+#X connect 4 2 5 0;
+#X connect 4 2 8 0;
+#X connect 5 0 0 1;
+#X connect 6 0 0 0;
+#X connect 6 0 0 1;
+#X connect 7 0 3 0;
+#X connect 7 0 6 0;
+#X connect 9 0 10 0;

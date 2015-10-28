@@ -1,0 +1,23 @@
+#N canvas 0 0 450 300 10;
+#X declare -lib maxlib;
+#X obj 144 76 inlet~;
+#X obj 183 127 snapshot~;
+#X obj 227 95 metro 67;
+#X obj 226 52 loadbang;
+#X msg 225 75 1;
+#X text 257 138;
+#X text 245 114 we're deriving with discrete samples. I forget what
+that's called;
+#X obj 183 170 delta;
+#X obj 303 171 import maxlib;
+#X text 227 165 delta can be found if you;
+#X obj 183 211 outlet;
+#X floatatom 291 42 5 5 1000 0 - - -;
+#X text 324 36 choose your own sample rate!;
+#X connect 0 0 1 0;
+#X connect 1 0 7 0;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 4 0 2 0;
+#X connect 7 0 10 0;
+#X connect 11 0 2 1;

@@ -1,0 +1,55 @@
+#N canvas 635 216 323 409 10;
+#X obj 2 113 tgl 14 0 \$0-Send1 \$0-2Send1 empty 0 -6 0 10 -258113
+-1 -1 0 1;
+#X obj 17 113 tgl 14 0 \$0-Send2 \$0-2Send2 empty 0 -6 0 10 -260097
+-1 -1 0 2;
+#X obj 32 113 tgl 14 0 \$0-Send3 \$0-2Send3 empty 0 -6 0 10 -257985
+-1 -1 0 3;
+#X obj 47 113 tgl 14 0 \$0-Send4 \$0-2Send4 empty 0 -6 0 10 -4034 -1
+-1 0 4;
+#X obj 62 113 tgl 14 0 \$0-Send5 \$0-2Send5 empty 0 -6 0 10 -4032 -1
+-1 0 5;
+#X obj 77 113 tgl 14 0 \$0-Send6 \$0-2Send6 empty 0 -6 0 10 -4160 -1
+-1 0 6;
+#X obj 92 113 tgl 14 0 \$0-Send7 \$0-2Send7 empty 0 -6 0 10 -159808
+-1 -1 0 7;
+#X obj 107 113 tgl 14 0 \$0-Send8 \$0-2Send8 empty 0 -6 0 10 -191407
+-1 -1 0 8;
+#X obj 1 1 desig;
+#X obj 120 113 cnv 2 2 14 empty empty empty 20 12 0 14 -1 -66577 0
+;
+#X obj 0 113 cnv 2 2 14 empty empty empty 20 12 0 14 -1 -66577 0;
+#X obj -23 239 outlet~;
+#X obj 62 319 outlet;
+#X obj 62 192 pack;
+#X obj 88 259 print;
+#X obj 108 173 - 1;
+#X obj 81 148 sel 0;
+#X obj 21 173 \$1;
+#X obj 14 152 bang;
+#X obj 1 49 LFO;
+#X connect 0 0 16 0;
+#X connect 0 0 18 0;
+#X connect 1 0 16 0;
+#X connect 1 0 18 0;
+#X connect 2 0 16 0;
+#X connect 2 0 18 0;
+#X connect 3 0 16 0;
+#X connect 3 0 18 0;
+#X connect 4 0 16 0;
+#X connect 4 0 18 0;
+#X connect 5 0 16 0;
+#X connect 5 0 18 0;
+#X connect 6 0 16 0;
+#X connect 6 0 18 0;
+#X connect 7 0 16 0;
+#X connect 7 0 18 0;
+#X connect 8 0 19 0;
+#X connect 13 0 12 0;
+#X connect 13 0 14 0;
+#X connect 15 0 13 1;
+#X connect 16 1 15 0;
+#X connect 17 0 13 0;
+#X connect 18 0 17 0;
+#X connect 19 0 11 0;
+#X coords 0 -1 1 1 122 128 1 0 0;

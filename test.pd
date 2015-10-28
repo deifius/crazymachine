@@ -1,0 +1,14 @@
+#N canvas 528 99 1246 744 10;
+#X obj 263 133 pvoc~;
+#X obj 110 136 soundtouch~;
+#X obj 413 436 image /home/yayo/Pictures/Mega-Man.gif;
+#X obj 367 284 bng 15 250 50 0 empty empty empty 0 -6 0 10 -4034 -1
+-1;
+#X obj 367 305 openpanel;
+#X msg 367 328 set open \$1;
+#X msg 391 392 open /home/yayo/Pictures/Megajump.gif;
+#X obj 356 529 image /home/yayo/Pictures/Megajump.gif;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;

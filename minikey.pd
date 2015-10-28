@@ -1,0 +1,561 @@
+#N canvas 1018 241 902 680 10;
+#X obj 105 156 cnv 15 140 110 empty empty empty 20 12 0 14 -195569
+-66577 0;
+#N canvas 191 591 785 362 midi 0;
+#X obj -19 10 r $C1;
+#X obj -19 38 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 21 38 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 21 10 r $CIS1;
+#X obj 73 38 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 73 10 r $D1;
+#X obj 115 38 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 115 10 r $DIS1;
+#X obj 169 38 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 169 10 r $E1;
+#X obj 209 38 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 209 10 r $F1;
+#X obj 249 38 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 249 10 r $FIS1;
+#X obj 303 38 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 303 10 r $G1;
+#X obj 341 38 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 341 11 r $GIS1;
+#X obj 392 38 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 392 11 r $A1;
+#X obj 431 38 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 431 11 r $AIS1;
+#X obj 484 38 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 484 11 r $B1;
+#X msg -19 68 60;
+#X msg 21 66 61;
+#X msg 73 66 62;
+#X msg 115 66 63;
+#X msg 169 66 64;
+#X msg 209 63 65;
+#X msg 249 64 66;
+#X msg 303 66 67;
+#X msg 341 68 68;
+#X msg 388 68 69;
+#X msg 432 69 70;
+#X msg 484 67 71;
+#X obj 484 222 mtof;
+#X floatatom 484 248 8 0 0 0 - - -;
+#X obj 484 138 +;
+#X floatatom 484 197 5 0 127 0 - - -;
+#X msg 601 200 -12;
+#X msg 544 280 -60;
+#X msg 558 260 -48;
+#X msg 572 240 -36;
+#X msg 586 220 -24;
+#X msg 615 180 0;
+#X msg 629 160 12;
+#X msg 643 140 24;
+#X msg 658 120 36;
+#X msg 672 100 48;
+#X msg 686 81 60;
+#X msg 700 62 72;
+#X obj 544 38 sel 0 1 2 3 4 5 6 7 8 9 10 11;
+#X floatatom 510 98 5 0 127 0 - #finetranspose -;
+#X obj 544 11 r $shift;
+#X obj 677 219 loadbang;
+#X obj 678 182 r $reset;
+#X obj 393 212 s $midino;
+#X obj 484 167 min 127;
+#X obj 674 245 s $resetnum;
+#X obj 636 313 s $resetradio;
+#X msg 636 285 5;
+#X connect 0 0 1 0;
+#X connect 1 0 24 0;
+#X connect 2 0 25 0;
+#X connect 3 0 2 0;
+#X connect 4 0 26 0;
+#X connect 5 0 4 0;
+#X connect 6 0 27 0;
+#X connect 7 0 6 0;
+#X connect 8 0 28 0;
+#X connect 9 0 8 0;
+#X connect 10 0 29 0;
+#X connect 11 0 10 0;
+#X connect 12 0 30 0;
+#X connect 13 0 12 0;
+#X connect 14 0 31 0;
+#X connect 15 0 14 0;
+#X connect 16 0 32 0;
+#X connect 17 0 16 0;
+#X connect 18 0 33 0;
+#X connect 19 0 18 0;
+#X connect 20 0 34 0;
+#X connect 21 0 20 0;
+#X connect 22 0 35 0;
+#X connect 23 0 22 0;
+#X connect 24 0 38 0;
+#X connect 25 0 38 0;
+#X connect 26 0 38 0;
+#X connect 27 0 38 0;
+#X connect 28 0 38 0;
+#X connect 29 0 38 0;
+#X connect 30 0 38 0;
+#X connect 31 0 38 0;
+#X connect 32 0 38 0;
+#X connect 33 0 38 0;
+#X connect 34 0 38 0;
+#X connect 35 0 38 0;
+#X connect 36 0 37 0;
+#X connect 38 0 58 0;
+#X connect 39 0 36 0;
+#X connect 39 0 57 0;
+#X connect 40 0 38 1;
+#X connect 41 0 38 1;
+#X connect 42 0 38 1;
+#X connect 43 0 38 1;
+#X connect 44 0 38 1;
+#X connect 45 0 38 1;
+#X connect 45 0 59 0;
+#X connect 46 0 38 1;
+#X connect 47 0 38 1;
+#X connect 48 0 38 1;
+#X connect 49 0 38 1;
+#X connect 50 0 38 1;
+#X connect 51 0 38 1;
+#X connect 52 0 41 0;
+#X connect 52 1 42 0;
+#X connect 52 2 43 0;
+#X connect 52 3 44 0;
+#X connect 52 4 40 0;
+#X connect 52 5 45 0;
+#X connect 52 6 46 0;
+#X connect 52 7 47 0;
+#X connect 52 8 48 0;
+#X connect 52 9 49 0;
+#X connect 52 10 50 0;
+#X connect 52 11 51 0;
+#X connect 53 0 38 1;
+#X connect 54 0 52 0;
+#X connect 55 0 45 0;
+#X connect 55 0 61 0;
+#X connect 56 0 45 0;
+#X connect 56 0 61 0;
+#X connect 58 0 39 0;
+#X connect 61 0 60 0;
+#X restore 13 374 pd midi numbers;
+#X text 5 334 --------------------------------------------------------
+;
+#X obj 105 107 cnv 15 70 45 empty empty empty 20 12 0 14 -228856 -66577
+0;
+#X floatatom 107 127 5 0 127 0 - #midino #midino_out;
+#X text 104 108 MIDI NUMBER;
+#X obj 178 107 cnv 15 30 45 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 186 124 bng 15 250 50 0 $reset empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 177 105 RESET;
+#X obj 211 108 cnv 15 40 45 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X floatatom 214 124 5 -60 67 0 - #resetnum #finetranspose;
+#X obj 254 106 cnv 15 38 190 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 259 129 vradio 15 1 0 11 $shift $resetradio empty 0 -8 0 10
+-262144 -1 -1 5;
+#X text 277 203 4;
+#X text 277 188 3;
+#X text 277 173 2;
+#X text 277 158 1;
+#X text 277 143 0;
+#X text 272 127 -1;
+#X text 277 218 5;
+#X text 277 233 6;
+#X text 277 248 7;
+#X text 277 263 8;
+#X text 277 278 9;
+#X text 251 106 OCTAVE;
+#X obj 127 380 r $midino_out;
+#X obj 202 449 outlet freq;
+#X obj 127 449 outlet midi;
+#X obj 202 422 mtof;
+#X obj 127 405 t f f;
+#X obj 102 302 cnv 8 50 15 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X text 107 300 MIDI #;
+#X obj 245 301 cnv 8 50 15 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X text 267 301 FREQ;
+#X text 209 105 TRANSP;
+#N canvas 15 4 999 574 keycolors 0;
+#X obj -1 3 cnv 15 1000 1000 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 26 253 cnv 15 150 300 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 41 318 r $C1;
+#X msg 41 426 \; $colC1 color \$1;
+#X msg 41 391 31;
+#X msg 74 391 30;
+#X obj 41 342 t b b;
+#X obj 74 366 del 200;
+#X obj 185 254 cnv 15 150 300 empty empty empty 20 12 0 14 -262144
+-66577 0;
+#X msg 200 392 31;
+#X msg 233 392 30;
+#X obj 200 343 t b b;
+#X obj 233 367 del 200;
+#X obj 343 256 cnv 15 150 300 empty empty empty 20 12 0 14 -262144
+-66577 0;
+#X msg 358 394 31;
+#X msg 391 394 30;
+#X obj 358 345 t b b;
+#X obj 391 369 del 200;
+#X obj 499 256 cnv 15 150 300 empty empty empty 20 12 0 14 -262144
+-66577 0;
+#X msg 514 394 31;
+#X msg 547 394 30;
+#X obj 514 345 t b b;
+#X obj 547 369 del 200;
+#X obj 658 257 cnv 15 150 300 empty empty empty 20 12 0 14 -262144
+-66577 0;
+#X msg 673 395 31;
+#X msg 706 395 30;
+#X obj 673 346 t b b;
+#X obj 706 370 del 200;
+#X obj 816 259 cnv 15 150 300 empty empty empty 20 12 0 14 -262144
+-66577 0;
+#X msg 831 397 31;
+#X msg 864 397 30;
+#X obj 831 348 t b b;
+#X obj 864 372 del 200;
+#X obj 971 259 cnv 15 150 300 empty empty empty 20 12 0 14 -262144
+-66577 0;
+#X msg 986 397 31;
+#X msg 1019 397 30;
+#X obj 986 348 t b b;
+#X obj 1019 372 del 200;
+#X obj 115 85 cnv 15 150 200 empty empty empty 20 12 0 14 -66577 -66577
+0;
+#X msg 135 183 31;
+#X obj 135 134 t b b;
+#X obj 168 158 del 200;
+#X obj 135 110 r $CIS1;
+#X msg 135 218 \; $colCIS1 color \$1;
+#X msg 168 183 12;
+#X obj 287 91 cnv 15 150 200 empty empty empty 20 12 0 14 -66577 -66577
+0;
+#X msg 307 189 31;
+#X obj 307 140 t b b;
+#X obj 340 164 del 200;
+#X msg 340 189 12;
+#X obj 606 88 cnv 15 150 200 empty empty empty 20 12 0 14 -66577 -66577
+0;
+#X msg 626 186 31;
+#X obj 626 137 t b b;
+#X obj 659 161 del 200;
+#X msg 659 186 12;
+#X obj 778 94 cnv 15 150 200 empty empty empty 20 12 0 14 -66577 -66577
+0;
+#X msg 798 192 31;
+#X obj 798 143 t b b;
+#X obj 831 167 del 200;
+#X msg 831 192 12;
+#X obj 945 96 cnv 15 150 200 empty empty empty 20 12 0 14 -66577 -66577
+0;
+#X msg 965 194 31;
+#X obj 965 145 t b b;
+#X obj 998 169 del 200;
+#X msg 998 194 12;
+#X obj 200 319 r $D1;
+#X msg 200 427 \; $colD1 color \$1;
+#X obj 307 116 r $DIS1;
+#X msg 307 224 \; $colDIS1 color \$1;
+#X msg 358 429 \; $colE1 color \$1;
+#X obj 358 321 r $E1;
+#X obj 514 321 r $F1;
+#X obj 673 322 r $G1;
+#X obj 831 324 r $A1;
+#X obj 986 324 r $B1;
+#X msg 514 429 \; $colF1 color \$1;
+#X msg 673 430 \; $colG1 color \$1;
+#X msg 831 432 \; $colA1 color \$1;
+#X msg 986 432 \; $colB1 color \$1;
+#X msg 626 221 \; $colFIS1 color \$1;
+#X msg 798 227 \; $colGIS1 color \$1;
+#X msg 965 229 \; $colAIS1 color \$1;
+#X obj 626 113 r $FIS1;
+#X obj 798 119 r $GIS1;
+#X obj 965 121 r $AIS1;
+#X connect 2 0 6 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 0;
+#X connect 6 0 4 0;
+#X connect 6 1 7 0;
+#X connect 7 0 5 0;
+#X connect 9 0 66 0;
+#X connect 10 0 66 0;
+#X connect 11 0 9 0;
+#X connect 11 1 12 0;
+#X connect 12 0 10 0;
+#X connect 14 0 69 0;
+#X connect 15 0 69 0;
+#X connect 16 0 14 0;
+#X connect 16 1 17 0;
+#X connect 17 0 15 0;
+#X connect 19 0 75 0;
+#X connect 20 0 75 0;
+#X connect 21 0 19 0;
+#X connect 21 1 22 0;
+#X connect 22 0 20 0;
+#X connect 24 0 76 0;
+#X connect 25 0 76 0;
+#X connect 26 0 24 0;
+#X connect 26 1 27 0;
+#X connect 27 0 25 0;
+#X connect 29 0 77 0;
+#X connect 30 0 77 0;
+#X connect 31 0 29 0;
+#X connect 31 1 32 0;
+#X connect 32 0 30 0;
+#X connect 34 0 78 0;
+#X connect 35 0 78 0;
+#X connect 36 0 34 0;
+#X connect 36 1 37 0;
+#X connect 37 0 35 0;
+#X connect 39 0 43 0;
+#X connect 40 0 39 0;
+#X connect 40 1 41 0;
+#X connect 41 0 44 0;
+#X connect 42 0 40 0;
+#X connect 44 0 43 0;
+#X connect 46 0 68 0;
+#X connect 47 0 46 0;
+#X connect 47 1 48 0;
+#X connect 48 0 49 0;
+#X connect 49 0 68 0;
+#X connect 51 0 79 0;
+#X connect 52 0 51 0;
+#X connect 52 1 53 0;
+#X connect 53 0 54 0;
+#X connect 54 0 79 0;
+#X connect 56 0 80 0;
+#X connect 57 0 56 0;
+#X connect 57 1 58 0;
+#X connect 58 0 59 0;
+#X connect 59 0 80 0;
+#X connect 61 0 81 0;
+#X connect 62 0 61 0;
+#X connect 62 1 63 0;
+#X connect 63 0 64 0;
+#X connect 64 0 81 0;
+#X connect 65 0 11 0;
+#X connect 67 0 47 0;
+#X connect 70 0 16 0;
+#X connect 71 0 21 0;
+#X connect 72 0 26 0;
+#X connect 73 0 31 0;
+#X connect 74 0 36 0;
+#X connect 82 0 52 0;
+#X connect 83 0 57 0;
+#X connect 84 0 62 0;
+#X restore 13 399 pd keycolors;
+#X obj 116 211 bng 16 250 50 0 $C1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 116 227 bng 16 250 50 0 $C1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 116 243 bng 16 250 50 0 $C1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 116 187 bng 8 250 50 0 $C1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 116 195 bng 8 250 50 0 $C1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 116 203 bng 8 250 50 0 $C1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 116 172 bng 8 250 50 0 $C1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 116 180 bng 8 250 50 0 $C1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 125 187 bng 12 250 50 0 $CIS1 empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 125 199 bng 12 250 50 0 $CIS1 empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 125 176 bng 12 250 50 0 $CIS1 empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 116 164 bng 8 250 50 0 $C1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 133 211 bng 16 250 50 0 $D1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 133 227 bng 16 250 50 0 $D1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 133 243 bng 16 250 50 0 $D1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 138 172 bng 8 250 50 0 $D1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 138 180 bng 8 250 50 0 $D1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 138 187 bng 8 250 50 0 $D1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 138 195 bng 8 250 50 0 $D1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 138 203 bng 8 250 50 0 $D1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 138 164 bng 8 250 50 0 $D1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 146 187 bng 12 250 50 0 $DIS1 empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 146 199 bng 12 250 50 0 $DIS1 empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 146 176 bng 12 250 50 0 $DIS1 empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 150 211 bng 16 250 50 0 $E1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 150 227 bng 16 250 50 0 $E1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 150 243 bng 16 250 50 0 $E1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 158 187 bng 8 250 50 0 $E1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 158 195 bng 8 250 50 0 $E1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 158 203 bng 8 250 50 0 $E1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 158 172 bng 8 250 50 0 $E1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 158 180 bng 8 250 50 0 $E1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 158 164 bng 8 250 50 0 $E1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 167 211 bng 16 250 50 0 $F1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 167 227 bng 16 250 50 0 $F1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 167 243 bng 16 250 50 0 $F1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 167 187 bng 8 250 50 0 $F1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 167 195 bng 8 250 50 0 $F1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 167 203 bng 8 250 50 0 $F1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 167 172 bng 8 250 50 0 $F1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 167 180 bng 8 250 50 0 $F1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 167 164 bng 8 250 50 0 $F1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 175 187 bng 12 250 50 0 $FIS1 empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 175 199 bng 12 250 50 0 $FIS1 empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 175 176 bng 12 250 50 0 $FIS1 empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 184 211 bng 16 250 50 0 $G1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 184 227 bng 16 250 50 0 $G1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 184 243 bng 16 250 50 0 $G1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 188 172 bng 8 250 50 0 $G1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 188 180 bng 8 250 50 0 $G1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 188 187 bng 8 250 50 0 $G1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 188 195 bng 8 250 50 0 $G1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 188 203 bng 8 250 50 0 $G1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 188 164 bng 8 250 50 0 $G1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 195 187 bng 12 250 50 0 $GIS1 empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 195 199 bng 12 250 50 0 $GIS1 empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 195 176 bng 12 250 50 0 $GIS1 empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 201 211 bng 16 250 50 0 $A1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 201 227 bng 16 250 50 0 $A1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 201 243 bng 16 250 50 0 $A1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 207 172 bng 8 250 50 0 $A1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 207 180 bng 8 250 50 0 $A1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 207 187 bng 8 250 50 0 $G1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 207 195 bng 8 250 50 0 $A1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 207 203 bng 8 250 50 0 $A1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 207 164 bng 8 250 50 0 $A1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 215 187 bng 12 250 50 0 $AIS1 empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 215 199 bng 12 250 50 0 $AIS1 empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 215 176 bng 12 250 50 0 $AIS1 empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 218 211 bng 16 250 50 0 $B1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 218 227 bng 16 250 50 0 $B1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 218 243 bng 16 250 50 0 $B1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 226 172 bng 8 250 50 0 $B1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 226 180 bng 8 250 50 0 $B1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 226 187 bng 8 250 50 0 $B1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 226 195 bng 8 250 50 0 $B1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 226 203 bng 8 250 50 0 $B1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 226 164 bng 8 250 50 0 $B1 empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 146 164 bng 12 250 50 0 $DIS1 empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 125 164 bng 12 250 50 0 $CIS1 empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 175 164 bng 12 250 50 0 $FIS1 empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 195 164 bng 12 250 50 0 $GIS1 empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 215 164 bng 12 250 50 0 $AIS1 empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 116 164 cnv 15 15 96 empty $colC1 empty 20 12 0 14 -262144 -262144
+0;
+#X obj 133 164 cnv 15 15 96 empty $colD1 empty 20 12 0 14 -262144 -262144
+0;
+#X obj 150 164 cnv 15 15 96 empty $colE1 empty 20 12 0 14 -262144 -262144
+0;
+#X obj 167 164 cnv 15 15 96 empty $colF1 empty 20 12 0 14 -262144 -262144
+0;
+#X obj 184 164 cnv 15 15 96 empty $colG1 empty 20 12 0 14 -262144 -262144
+0;
+#X obj 201 164 cnv 15 15 96 empty $colA1 empty 20 12 0 14 -262144 -262144
+0;
+#X obj 218 164 cnv 15 15 96 empty $colB1 empty 20 12 0 14 -262144 -262144
+0;
+#X obj 125 164 cnv 12 12 48 empty $colCIS1 empty 20 12 0 14 -33289
+-262144 0;
+#X obj 146 164 cnv 12 12 48 empty $colDIS1 empty 20 12 0 14 -33289
+-262144 0;
+#X obj 175 164 cnv 12 12 48 empty $colFIS1 empty 20 12 0 14 -33289
+-262144 0;
+#X obj 195 164 cnv 12 12 48 empty $colGIS1 empty 20 12 0 14 -33289
+-262144 0;
+#X obj 215 164 cnv 12 12 48 empty $colAIS1 empty 20 12 0 14 -33289
+-262144 0;
+#X connect 25 0 29 0;
+#X connect 28 0 26 0;
+#X connect 29 0 27 0;
+#X connect 29 1 28 0;
+#X coords 0 -1 1 1 200 220 2 100 100;

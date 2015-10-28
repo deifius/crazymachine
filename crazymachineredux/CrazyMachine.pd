@@ -1,0 +1,52 @@
+#N canvas 281 102 565 359 10;
+#N canvas 304 48 707 551 machine 1;
+#X obj 102 102 cnv 15 100 60 empty empty empty 20 12 0 14 -258113 -66577
+0;
+#X obj 240 102 cnv 15 100 60 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X obj 377 103 cnv 15 100 60 empty empty empty 20 12 0 14 -257985 -66577
+0;
+#X obj 515 103 cnv 15 100 60 empty empty empty 20 12 0 14 -4034 -66577
+0;
+#X obj 160 281 cnv 15 30 48 empty empty empty 20 12 0 14 -4032 -66577
+0;
+#X obj 387 289 cnv 15 100 60 empty empty empty 20 12 0 14 -4160 -66577
+0;
+#X obj 535 289 cnv 15 100 60 empty empty empty 20 12 0 14 -159808 -66577
+0;
+#X obj 166 293 s-h;
+#X obj 102 244 longsequence;
+#X obj 106 282 mic~;
+#X obj 196 286 routematrix;
+#N canvas 0 0 450 300 wackyunit 0;
+#X obj 101 150 specmash;
+#X obj 101 101 desig;
+#X coords 0 -1 1 1 144 128 1 100 100;
+#X restore 491 289 pd wackyunit;
+#N canvas 0 0 450 300 wackyunit 0;
+#X obj 101 150 specmash;
+#X obj 101 101 desig;
+#X coords 0 -1 1 1 144 128 1 100 100;
+#X restore 343 289 pd wackyunit;
+#X obj 109 113 syncLFO 1;
+#X obj 246 113 syncLFO 2;
+#X obj 383 113 syncLFO 3;
+#X obj 520 113 syncLFO 4;
+#X text 104 100 1;
+#X text 242 99 2;
+#X text 377 101 3;
+#X text 515 100 4;
+#X text 159 278 5;
+#X text 477 288 6;
+#X text 615 288 7;
+#X text 123 0 8;
+#X obj 300 287 cnv 15 30 134 empty empty empty 20 12 0 14 -258699 -66577
+0;
+#X obj 270 287 cnv 15 30 134 empty empty empty 20 12 0 14 -258699 -66577
+0;
+#X connect 13 1 10 8;
+#X connect 14 1 10 8;
+#X connect 15 1 10 8;
+#X connect 16 1 10 8;
+#X coords 0 -1 1 1 546 336 1 100 100;
+#X restore 2 3 pd machine;

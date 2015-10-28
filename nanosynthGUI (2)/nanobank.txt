@@ -1,0 +1,16 @@
+Piano;
+idiofone;
+Organ;
+Guitar;
+Bass;
+Strings;
+Choir;
+Brass;
+Reed;
+Pipe;
+Lead;
+Pad;
+SynthFX;
+Ethnic;
+Drum;
+Effects;

@@ -1,0 +1,6 @@
+#N canvas 339 263 450 300 10;
+#X obj 176 162 dac~;
+#X obj 37 43 primemoduloprime 76543;
+#X obj 201 47 primemoduloprime 87654;
+#X connect 1 0 0 0;
+#X connect 2 0 0 1;

@@ -1,0 +1,365 @@
+#N canvas 80 133 670 452 10;
+#X obj 102 105 cnv 15 130 125 empty quiggle WaveShape 110 5 0 20 -233017
+-66577 0;
+#X obj 239 126 vradio 15 1 0 6 \$0-wavpreset \$0-2wavpreset empty 0
+-6 0 8 -262144 -1 -1 3;
+#X text 257 126 sin;
+#X text 258 142 square;
+#X text 258 172 sawtooth;
+#X text 259 202 nothing;
+#X obj 103 130 cnv 15 98 98 empty quiggull 34 34 0 0 4 -262144 -262144
+0;
+#N canvas 0 22 458 308 (subpatch) 0;
+#X array \$0-OverTone 515 float 3;
+#A 0 -0.00383505 0 0 0 0.00383505 0 0.00745528 0 0.0106547 0 0.0132445
+0 0.015061 0 0.0159719 0 0.0158824 0 0.0147385 0 0.0125296 0 0.00928907
+0 0.00509249 0 5.51452e-05 0 -0.00567287 0 -0.0119127 0 -0.0184638
+0 -0.0251125 0 -0.03164 0 -0.037832 0 -0.0434869 0 -0.0484244 0 -0.0524924
+0 -0.0555739 0 -0.0575913 0 -0.0585099 0 -0.0583393 0 -0.0571332 0
+-0.054987 0 -0.0520345 0 -0.0484421 0 -0.0444023 0 -0.0401258 0 -0.035833
+0 -0.0317452 0 -0.0280753 0 -0.0250191 0 -0.0227474 0 -0.0213989 0
+-0.0210744 0 -0.0218327 0 -0.0236876 0 -0.0266077 0 -0.0305173 0 -0.0352993
+0 -0.0407997 0 -0.0468338 0 -0.053194 0 -0.0596574 0 -0.0659955 0 -0.0719833
+0 -0.0774082 0 -0.0820793 0 -0.0858346 0 -0.0885486 0 -0.0901368 0
+-0.0905598 0 -0.0898253 0 -0.0879876 0 -0.0851459 0 -0.0814407 0 -0.0770482
+0 -0.0721732 0 -0.0670411 0 -0.0618889 0 -0.0569558 0 -0.0524731 0
+-0.0486553 0 -0.0456907 0 -0.0437343 0 -0.0429008 0 -0.0432601 0 -0.0448337
+0 -0.0475943 0 -0.0514658 0 -0.0563268 0 -0.0620147 0 -0.0683327 0
+-0.0750568 0 -0.0819455 0 -0.088749 0 -0.0952198 0 -0.101122 0 -0.106242
+0 -0.110397 0 -0.113442 0 -0.115277 0 -0.115851 0 -0.115164 0 -0.113269
+0 -0.110269 0 -0.106312 0 -0.101588 0 -0.0963217 0 -0.0907611 0 -0.0851694
+0 -0.0798147 0 -0.0749586 0 -0.0708455 0 -0.0676933 0 -0.0656836 0
+-0.0649545 0 -0.0655946 0 -0.0676389 0 -0.071067 0 -0.0758034 0 -0.0817201
+0 -0.0886413 0 -0.0963504 0 -0.104598 0 -0.113111 0 -0.121606 0 -0.129798
+0 -0.137413 0 -0.144199 0 -0.149936 0 -0.154448 0 -0.157606 0 -0.159338
+0 -0.159628 0 -0.158523 0 -0.156128 0 -0.1526 0 -0.148148 0 -0.143024
+0 -0.137506 0 -0.131899 0 -0.126512 0 -0.121653 0 -0.117612 0 -0.114651
+0 -0.112994 0 -0.112815 0 -0.114233 0 -0.117304 0 -0.12202 0 -0.128306
+0 -0.136028 0 -0.144988 0 -0.154942 0 -0.1656 0 -0.176644 0 -0.187736
+0 -0.198534 0 -0.208704 0 -0.217934 0 -0.225949 0 -0.23252 0 -0.237473
+0 -0.240702 0 -0.242168 0 -0.241906 0 -0.240021 0 -0.236689 0 -0.232147
+0 -0.226686 0 -0.220641 0 -0.214376 0 -0.208272 0 -0.202708 0 -0.198052
+0 -0.19464 0 -0.192763 0 -0.192657 0 -0.194491 0 -0.198358 0 -0.204272
+0 -0.212163 0 -0.221884 0 -0.233207 0 -0.24584 0 -0.259429 0 -0.273578
+0 -0.28786 0 -0.301837 0 -0.315074 0 -0.327159 0 -0.337719 0 -0.346437
+0 -0.353064 0 -0.357433 0 -0.359466 0 -0.359181 0 -0.35669 0 -0.352199
+0 -0.346001 0 -0.338469 0 -0.330038 0 -0.321193 0 -0.312449 0 -0.304331
+0 -0.297354 0 -0.292 0 -0.288702 0 -0.28782 0 -0.289628 0 -0.294301
+0 -0.301902 0 -0.31238 0 -0.325567 0 -0.341182 0 -0.358838 0 -0.378055
+0 -0.398277 0 -0.418891 0 -0.439253 0 -0.458706 0 -0.476614 0 -0.492384
+0 -0.505492 0 -0.515508 0 -0.522114 0 -0.525126 0 -0.524504 0 -0.520359
+0 -0.512958 0 -0.502717 0 -0.490198 0 -0.476085 0 -0.461171 0 -0.44633
+0 -0.432487 0 -0.420584 0 -0.411552 0 -0.406265 0 -0.405514 0 -0.409967
+0 -0.420142 0 -0.436375 0 -0.458801 0 -0.487338 0 -0.521675 0 -0.56127
+0 -0.605356 0 -0.652951 0 -0.702881 0 -0.753806 0 -0.804249 0 -0.852641
+0 -0.897359 0 -0.936772 0 -0.96929 0 -0.993413 0 -1.00777 0 -1.01118
+0 -1.00266 0 -0.981497 0 -0.947242 0 -0.899752 0 -0.83919 0 -0.766033
+0 -0.681062 0 -0.585351 0 -0.48024 0 -0.367305 0 -0.248322 0 -0.125218
+0 -2.71462e-05;
+#X coords 0 -1 515 1 100 100 1;
+#X restore 111 129 graph;
+#X obj 384 216 outlet~;
+#X obj 126 255 cnv 1 148 17 empty quiggot 20 12 0 0 4 -262144 -262144
+0;
+#N canvas 169 142 706 577 SaveAll 0;
+#X obj 413 -3 bng 8 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 413 -31 r SaveItAll;
+#X msg 158 489 rewind;
+#X msg 239 484 bang;
+#X msg 311 366 write /Volumes/MEGAMAN/untitled;
+#N canvas 771 36 472 512 openall 0;
+#X obj 246 453 outlet;
+#X obj 206 352 s MasterSaveOne;
+#X obj 236 376 s MasterSaveTwo;
+#X obj 266 400 s MasterSaveThree;
+#X obj 296 422 s MasterSaveFour;
+#X obj 148 234 textfile;
+#X msg 230 119 rewind;
+#X msg 240 144 clear;
+#X msg 252 170 read \$1;
+#X obj 292 100 openpanel;
+#X obj 293 79 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 293 46 inlet;
+#X obj 157 166 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#N canvas 0 22 518 368 countto4 0;
+#X floatatom 250 207 5 0 0 0 - - -;
+#X obj 248 178 int;
+#X obj 320 177 + 1;
+#X msg 120 108 0;
+#X obj 209 132 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 238 256 outlet;
+#X obj 229 68 inlet;
+#X obj 121 53 pipe 15;
+#X text 224 51 recieve any input;
+#X text 150 276 counts from 0 to (whatever sel has);
+#X obj 118 79 sel 3;
+#X connect 0 0 5 0;
+#X connect 0 0 7 0;
+#X connect 1 0 2 0;
+#X connect 1 0 0 0;
+#X connect 2 0 1 1;
+#X connect 3 0 1 1;
+#X connect 4 0 1 0;
+#X connect 6 0 4 0;
+#X connect 7 0 10 0;
+#X connect 10 0 3 0;
+#X restore 257 241 pd countto4;
+#X obj 230 206 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 206 280 pack;
+#X obj 205 308 route 0 1 2 3;
+#X obj 97 333 print;
+#X connect 5 0 15 1;
+#X connect 5 1 15 1;
+#X connect 6 0 5 0;
+#X connect 6 0 14 0;
+#X connect 8 0 5 0;
+#X connect 8 0 12 0;
+#X connect 9 0 8 0;
+#X connect 10 0 9 0;
+#X connect 11 0 10 0;
+#X connect 12 0 6 0;
+#X connect 13 0 15 0;
+#X connect 14 0 5 0;
+#X connect 15 0 16 0;
+#X connect 15 0 17 0;
+#X connect 16 0 1 0;
+#X connect 16 1 2 0;
+#X connect 16 2 3 0;
+#X connect 16 3 4 0;
+#X restore 78 330 pd openall;
+#X obj 450 128 r OpenWutev;
+#X obj 316 488 print save data;
+#X text 384 457 this jumble of code at least;
+#X text 399 471 can save a MT file;
+#N canvas 0 22 466 316 SavePreparer 0;
+#X obj 180 86 savepanel;
+#X obj 181 66 bng 8 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X msg 234 128 add2 \$1;
+#X msg 127 129 set write;
+#X obj 145 256 outlet;
+#X obj 226 191 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 181 18 inlet;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 1 0 3 0;
+#X connect 2 0 4 0;
+#X connect 2 0 5 0;
+#X connect 3 0 4 0;
+#X connect 5 0 4 0;
+#X connect 6 0 1 0;
+#X restore 340 317 pd SavePreparer;
+#N canvas 0 22 345 260 ClearBanger 0;
+#X msg 148 80 clear;
+#X obj 90 57 loadbang;
+#X obj 151 62 del 5;
+#X msg 150 43 bang;
+#X obj 118 18 inlet;
+#X obj 135 147 outlet;
+#X connect 0 0 5 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;
+#X restore 379 406 pd ClearBanger;
+#N canvas 0 22 425 462 PanSave 0;
+#X msg 103 109;
+#X msg 103 159;
+#X msg 103 205;
+#X msg 32 -7 set;
+#X msg 101 46;
+#X obj 31 -27 loadbang;
+#N canvas 0 22 482 332 panset 0;
+#X obj 141 57 r pansetFIRST;
+#X obj 111 14 r SaveItAll;
+#X msg 111 38 bang;
+#X obj 111 78 float;
+#X obj 107 201 outlet;
+#X msg 228 105 add \$1;
+#X msg 70 104 set add pansetFIRST;
+#X connect 0 0 3 1;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 6 0;
+#X connect 3 0 5 0;
+#X connect 5 0 4 0;
+#X connect 6 0 4 0;
+#X restore 101 17 pd panset;
+#N canvas 0 22 478 328 LFOPANFREQ 0;
+#X obj 141 57 r LFOPanFreqFIRST;
+#X obj 111 14 r SaveItAll;
+#X msg 111 38 bang;
+#X obj 111 78 float;
+#X obj 107 201 outlet;
+#X msg 228 105 add \$1;
+#X msg 63 128 set add LFOPanFreqFIRST;
+#X connect 0 0 3 1;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 6 0;
+#X connect 3 0 5 0;
+#X connect 5 0 4 0;
+#X connect 6 0 4 0;
+#X restore 103 76 pd LFOPANFREQ;
+#N canvas 0 22 462 312 LFOPanRange 0;
+#X obj 141 57 r LFOPanRangeFIRST;
+#X obj 111 14 r SaveItAll;
+#X msg 111 38 bang;
+#X obj 111 78 float;
+#X obj 107 201 outlet;
+#X msg 258 105 add \$1;
+#X msg 70 105 set add LFOPanRangeFIRST;
+#X connect 0 0 3 1;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 6 0;
+#X connect 3 0 5 0;
+#X connect 5 0 4 0;
+#X connect 6 0 4 0;
+#X restore 103 134 pd LFOPanRange;
+#N canvas 0 22 462 312 lfoIOpan 0;
+#X obj 141 57 r FIRSTPanLFOIO;
+#X obj 111 14 r SaveItAll;
+#X msg 111 38 bang;
+#X obj 111 78 float;
+#X obj 107 201 outlet;
+#X msg 228 105 add \$1;
+#X msg 70 105 set add FIRSTPanLFOIO;
+#X connect 0 0 3 1;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 3 0 6 0;
+#X connect 5 0 4 0;
+#X connect 6 0 4 0;
+#X restore 103 180 pd lfoIOpan;
+#X obj 46 246 outlet;
+#X obj 224 -11 inlet;
+#X text 149 265 this works great \, now I have;
+#X text 132 284 to expand this out;
+#X connect 0 0 10 0;
+#X connect 1 0 10 0;
+#X connect 2 0 10 0;
+#X connect 3 0 4 0;
+#X connect 3 0 0 0;
+#X connect 3 0 1 0;
+#X connect 3 0 2 0;
+#X connect 4 0 10 0;
+#X connect 5 0 3 0;
+#X connect 6 0 4 0;
+#X connect 7 0 0 0;
+#X connect 8 0 1 0;
+#X connect 9 0 2 0;
+#X connect 11 0 4 0;
+#X connect 11 0 0 0;
+#X connect 11 0 1 0;
+#X connect 11 0 2 0;
+#X restore 181 137 pd PanSave;
+#X obj 328 444 qlist;
+#N canvas 0 22 531 417 openone 0;
+#X obj 267 26 inlet;
+#X obj 264 78 openpanel;
+#X msg 264 51 bang;
+#X msg 229 116 read \$1;
+#X obj 219 159 textfile;
+#X msg 87 127 bang;
+#X msg 94 83 rewind;
+#X obj 225 343 send;
+#X obj 219 222 unpack s f;
+#X obj 274 308 pipe 5;
+#X text 55 61 bang these to recall;
+#X text 110 310 still bugs here;
+#N canvas 0 22 454 304 callperl 0;
+#X restore 231 281 pd callperl;
+#X connect 0 0 2 0;
+#X connect 1 0 3 0;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 4 0 8 0;
+#X connect 5 0 4 0;
+#X connect 6 0 4 0;
+#X connect 8 1 9 0;
+#X connect 9 0 7 0;
+#X restore 454 182 pd openone;
+#X connect 0 0 10 0;
+#X connect 0 0 12 0;
+#X connect 1 0 0 0;
+#X connect 2 0 13 0;
+#X connect 3 0 13 0;
+#X connect 4 0 11 0;
+#X connect 4 0 13 0;
+#X connect 6 0 14 0;
+#X connect 10 0 4 0;
+#X connect 11 0 13 0;
+#X connect 12 0 13 0;
+#X connect 13 0 7 0;
+#X restore 795 108 pd SaveAll;
+#X obj 755 84 bng 40 250 50 0 SaveItAll empty Save_All 0 -6 0 12 -262144
+-1 -1;
+#X obj 842 83 bng 25 250 50 0 OpenWutev empty Open 0 -6 0 12 -262144
+-1 -1;
+#X text 258 157 triangle;
+#X text 259 187 pulse;
+#X text 390 78 pitch;
+#N canvas 369 127 581 500 WavShape 1;
+#X obj 6 74 sel 0 1 2 3 4 5;
+#X obj 8 55 r \$0-wavpreset;
+#X obj 49 322 unpack f f f f f f f f f f f f f f f f;
+#X msg 4 97 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#X msg 23 120 1 0 0.33333 0 0.2 0 0.142857 0 0.111111 0 0.0909091 0
+0.0769231 0 0.0666667 0;
+#X msg 51 155 0.8 0 -0.0888888 0 0.032 0 -0.01632 0 0.00987 0 -0.0066157
+0 0.00473737 0 -0.00333333 0;
+#X msg 111 199 -0.25 0.2 -0.16667 0.125 -0.111111 0.1 -0.0909091 0.083333
+-0.0769231 0.0714286 -0.066667 0.0625 -0.0588235 0.0555556 -0.055 0.054
+;
+#X msg 143 289 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#X msg 53 380 \; \$17-OverTone sinesum 512 \$1 \$2 \$3 \$4 \$5 \$6
+\$7 \$8 \$9 \$10 \$11 \$12 \$13 \$14 \$15 \$16;
+#X msg 113 251 -0.1 0.1 -0.1 0.1 -0.1 0.1 -0.1 0.1 -0.1 0.1 -0.1 0.1
+-0.1 0.1 -0.1 0.1;
+#X obj 53 353 pack f f f f f f f f f f f f f f f f \$0;
+#X connect 0 0 3 0;
+#X connect 0 1 4 0;
+#X connect 0 2 5 0;
+#X connect 0 3 6 0;
+#X connect 0 4 9 0;
+#X connect 0 5 7 0;
+#X connect 1 0 0 0;
+#X connect 2 0 10 0;
+#X connect 2 1 10 1;
+#X connect 2 2 10 2;
+#X connect 2 3 10 3;
+#X connect 2 4 10 4;
+#X connect 2 5 10 5;
+#X connect 2 6 10 6;
+#X connect 2 7 10 7;
+#X connect 2 8 10 8;
+#X connect 2 9 10 9;
+#X connect 2 10 10 10;
+#X connect 2 11 10 11;
+#X connect 2 12 10 12;
+#X connect 2 13 10 13;
+#X connect 2 14 10 14;
+#X connect 2 15 10 15;
+#X connect 3 0 2 0;
+#X connect 4 0 2 0;
+#X connect 5 0 2 0;
+#X connect 6 0 2 0;
+#X connect 7 0 2 0;
+#X connect 9 0 2 0;
+#X connect 10 0 8 0;
+#X restore 484 217 pd WavShape;
+#X obj 391 163 tabosc4~ \$0-OverTone;
+#X obj 391 97 inlet~;
+#X floatatom 527 106 5 0 0 0 - - -;
+#X connect 17 0 8 0;
+#X connect 18 0 17 0;
+#X connect 19 0 17 1;
+#X coords 0 -1 1 1 230 132 2 100 100;

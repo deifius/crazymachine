@@ -1,0 +1,71 @@
+#N canvas 0 22 169 162 10;
+#N canvas 293 112 518 368 therules 1;
+#X obj 103 244 sin;
+#X obj 130 171 float;
+#X obj 119 108 loadbang;
+#X msg 120 128 1;
+#X obj 119 148 metro 33;
+#X obj 163 242 tan;
+#X obj 104 292 outlet;
+#X obj 164 287 outlet;
+#X obj 27 324 hsl 128 15 -1 1 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 10607 1;
+#X obj 104 267 * 1;
+#X obj 163 267 * 1;
+#X obj 85 339 hsl 128 15 -5 5 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 7497 1;
+#X text 27 339 sin lfo;
+#X text 82 352 tan LFO;
+#X obj 145 21 inlet;
+#X obj 23 21 inlet;
+#X obj 264 19 inlet;
+#X obj 144 84 r \$1-PhaseLFOLFO;
+#X obj 181 144 r \$1-FreqLFOLFO;
+#X obj 195 202 r \$1-RangeLFOLFO;
+#X obj 264 43 s \$1-RangeLFOLFO;
+#X obj 23 43 s \$1-FreqLFOLFO;
+#X obj 144 41 s \$1-PhaseLFOLFO;
+#X obj 183 169 + 0.01;
+#X obj 126 210 + 0;
+#X connect 0 0 9 0;
+#X connect 0 0 8 0;
+#X connect 1 0 23 0;
+#X connect 1 0 24 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 1 0;
+#X connect 5 0 10 0;
+#X connect 5 0 11 0;
+#X connect 9 0 6 0;
+#X connect 10 0 7 0;
+#X connect 14 0 22 0;
+#X connect 15 0 21 0;
+#X connect 16 0 20 0;
+#X connect 17 0 24 1;
+#X connect 18 0 23 1;
+#X connect 19 0 10 1;
+#X connect 19 0 9 1;
+#X connect 23 0 1 1;
+#X connect 24 0 0 0;
+#X connect 24 0 5 0;
+#X restore 161 195 pd therules;
+#X obj 3 2 cnv 160 160 160 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 40 15 vsl 15 128 0.01 0.6 1 0 \$1-FreqLFOLFO \$1-2FreqLFOLFO
+frequency 0 -8 0 8 -262144 -1 -1 0 1;
+#X obj 62 25 vsl 15 118 0 6.282 0 0 \$1-PhaseLFOLFO \$1-2PhaseLFOLFO
+phase 0 -8 0 8 -262144 -1 -1 0 1;
+#X obj 85 35 vsl 15 108 0.06282 6.282 1 0 \$1-RangeLFOLFO \$1-2RangeLFOLFO
+Range 0 -8 0 8 -262144 -1 -1 0 1;
+#X text 95 203 tangeant;
+#X text 10 203 sine;
+#X obj 197 170 inlet;
+#X obj 160 170 inlet;
+#X obj 234 170 inlet;
+#X obj 162 217 outlet;
+#X obj 233 217 outlet;
+#X connect 0 0 10 0;
+#X connect 0 1 11 0;
+#X connect 7 0 0 1;
+#X connect 8 0 0 0;
+#X connect 9 0 0 2;
