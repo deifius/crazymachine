@@ -1,0 +1,165 @@
+Pd 0.43.4.extended on x11
+Tcl/Tk 8.5.15
+------------------------------------------------------------------------------
+{} 4 {------------------ done with main ----------------------
+} {} 3 {Connection from 'pd' to 'pd-gui' on 127.0.0.1:53080
+} {} 3 {[import] $Revision: 1.2 $
+} {} 4 {	[import] is still in development, the interface could change!
+} {} 4 {	compiled against Pd version 0.43.4
+} {} 3 {[path] $Revision: 1.2 $
+} {} 4 {	[path] is still in development, the interface could change!
+} {} 4 {	compiled against Pd version 0.43.4
+} {} 4 {Default font: DejaVu Sans Mono
+} {} 8 {Creating 8 font at {-8 5 11}
+} {} 8 {Creating 9 font at {-9 6 12}
+} {} 8 {Creating 10 font at {-10 6 13}
+} {} 8 {Creating 12 font at {-12 7 16}
+} {} 8 {Creating 14 font at {-14 8 17}
+} {} 8 {Creating 16 font at {-16 10 19}
+} {} 8 {Creating 18 font at {-18 11 22}
+} {} 8 {Creating 24 font at {-24 14 29}
+} {} 8 {Creating 30 font at {-30 18 37}
+} {} 8 {Creating 36 font at {-37 22 44}
+} {} 3 {Cannot read plugins folder: '/var/lib/defoma/x-ttcidfont-conf.d/dirs/TrueType'
+} {} 3 {Cannot read plugins folder: '/home/dafe/pd-externals'
+} {} 3 {Cannot read plugins folder: '/usr/local/lib/pd-externals'
+} {} 3 {Loading plugin: /usr/lib/pd-extended/extra/64bit-warning-plugin/64bit-warning-plugin.tcl
+} {} 1 {
+WARNING: 64-bit builds are still beta, some libraries are known to have serious issues (cyclone, maxlib, moonlib, moocow, pdp, bsaylor, etc.)
+} {} 1 {For more info, see the README.txt in '64-bit-warning-plugin' in the Help Browser
+
+} {} 3 {Loading plugin: /usr/lib/pd-extended/extra/search-plugin/search-plugin.tcl
+} {} 3 {Loading translations for search-plugin.tcl
+} {} 2 {tried but couldn't sync A/D/A
+} {} 5 {Using /usr/lib/pd-extended/tcl/../startup as startup.
+} {} 4 {Loading /usr/lib/pd-extended/tcl/../startup/0.libdir.pd_linux
+} {} 3 {libdir loader 1.9
+} {} 3 {	compiled on Nov  4 2013 at 17:50:58 
+} {} 3 {	compiled against Pd version 0.43.4.extended
+} {} 4 {Loading /usr/lib/pd-extended/tcl/../startup/1.list.pd_linux
+} {} 4 {Loading extra in /usr/lib/pd-extended/tcl/../startup/extra
+} {} 3 {libdir_loader: added 'extra' to the global objectclass path
+} {} 14 {Loaded libdir 'extra' from '/usr/lib/pd-extended/tcl/../extra/extra'
+} {} 4 {Loading pdlua in /usr/lib/pd-extended/tcl/../startup/pdlua
+} {} 3 {pdlua 0.7.1 (GPL) 2012 Martin Peach, based on
+} {} 3 {lua 0.6~svn (GPL) 2008 Claude Heiland-Allen <claudiusmaximus@goto10.org>
+} {} 3 {pdlua: compiled for pd-0.43 on Nov  4 2013 17:50:59
+} {} 4 {Loading tclpd in /usr/lib/pd-extended/tcl/../startup/tclpd
+} {} 3 {tclpd loader v0.3.0} {} 2 {
+} {} 3 {tclpd: trying to load /usr/lib/pd-extended/tcl/../extra/tclpd/tclpd.tcl...} {} 2 {
+} {} 3 {tclpd: loaded /usr/lib/pd-extended/tcl/../extra/tclpd/tclpd.tcl} {} 2 {
+} {} 4 {Loading vanilla in /usr/lib/pd-extended/tcl/../startup/vanilla
+} {} 3 {libdir_loader: added 'vanilla' to the global objectclass path
+} {} 14 {Loaded libdir 'vanilla' from '/usr/lib/pd-extended/tcl/../extra/vanilla'
+} {} 6 {not registering [pix_filmQT] again...
+} {} 4 {GEM: Graphics Environment for Multimedia
+} {} 4 {GEM: ver: 0.93.3 
+} {} 4 {GEM: compiled: Nov  4 2013
+} {} 4 {GEM: maintained by IOhannes m zmoelnig
+} {} 4 {GEM: Authors :	Mark Danks (original version)
+} {} 4 {GEM:		Chris Clepper
+} {} 4 {GEM:		Cyrille Henry
+} {} 4 {GEM:		IOhannes m zmoelnig
+} {} 4 {GEM: with help by Guenter Geiger, Daniel Heckenberg, James Tittle, Hans-Christoph Steiner, et al.
+} {} 4 {GEM: found a bug? miss a feature? please report it:
+} {} 4 {GEM: 	homepage http://gem.iem.at/
+} {} 4 {GEM: 	bug-tracker http://sourceforge.net/projects/pd-gem/
+} {} 4 {GEM: 	mailing-list http://lists.puredata.info/listinfo/gem-dev/
+} {} 5 {eventually adding Gem path '/usr/lib/pd-extended/tcl/../extra/Gem' to search-paths
+} {} 4 {GEM: compiled for SIMD architecture: SSE2 MMX 
+} {} 4 {GEM: using SSE2 optimization
+} {} 3 {libdir_loader: added 'cyclone' to the global objectclass path
+} {} 14 {Loaded libdir 'cyclone' from '/usr/lib/pd-extended/tcl/../extra/cyclone'
+} {} 3 {libdir_loader: added 'zexy' to the global objectclass path
+} {} 14 {Loaded libdir 'zexy' from '/usr/lib/pd-extended/tcl/../extra/zexy'
+} {} 3 {libdir_loader: added 'creb' to the global objectclass path
+} {} 14 {Loaded libdir 'creb' from '/usr/lib/pd-extended/tcl/../extra/creb'
+} {} 3 {libdir_loader: added 'cxc' to the global objectclass path
+} {} 14 {Loaded libdir 'cxc' from '/usr/lib/pd-extended/tcl/../extra/cxc'
+} {} 3 {libdir_loader: added 'iemlib' to the global objectclass path
+} {} 14 {Loaded libdir 'iemlib' from '/usr/lib/pd-extended/tcl/../extra/iemlib'
+} {} 3 {libdir_loader: added 'list-abs' to the global objectclass path
+} {} 14 {Loaded libdir 'list-abs' from '/usr/lib/pd-extended/tcl/../extra/list-abs'
+} {} 3 {libdir_loader: added 'mapping' to the global objectclass path
+} {} 14 {Loaded libdir 'mapping' from '/usr/lib/pd-extended/tcl/../extra/mapping'
+} {} 3 {libdir_loader: added 'markex' to the global objectclass path
+} {} 14 {Loaded libdir 'markex' from '/usr/lib/pd-extended/tcl/../extra/markex'
+} {} 3 {libdir_loader: added 'maxlib' to the global objectclass path
+} {} 14 {Loaded libdir 'maxlib' from '/usr/lib/pd-extended/tcl/../extra/maxlib'
+} {} 3 {libdir_loader: added 'mjlib' to the global objectclass path
+} {} 14 {Loaded libdir 'mjlib' from '/usr/lib/pd-extended/tcl/../extra/mjlib'
+} {} 3 {libdir_loader: added 'motex' to the global objectclass path
+} {} 14 {Loaded libdir 'motex' from '/usr/lib/pd-extended/tcl/../extra/motex'
+} {} 3 {libdir_loader: added 'oscx' to the global objectclass path
+} {} 14 {Loaded libdir 'oscx' from '/usr/lib/pd-extended/tcl/../extra/oscx'
+} {} 3 {libdir_loader: added 'pddp' to the global objectclass path
+} {} 14 {Loaded libdir 'pddp' from '/usr/lib/pd-extended/tcl/../extra/pddp'
+} {} 3 {libdir_loader: added 'pdogg' to the global objectclass path
+} {} 14 {Loaded libdir 'pdogg' from '/usr/lib/pd-extended/tcl/../extra/pdogg'
+} {} 3 {libdir_loader: added 'pmpd' to the global objectclass path
+} {} 14 {Loaded libdir 'pmpd' from '/usr/lib/pd-extended/tcl/../extra/pmpd'
+} {} 3 {libdir_loader: added 'sigpack' to the global objectclass path
+} {} 14 {Loaded libdir 'sigpack' from '/usr/lib/pd-extended/tcl/../extra/sigpack'
+} {} 3 {libdir_loader: added 'smlib' to the global objectclass path
+} {} 14 {Loaded libdir 'smlib' from '/usr/lib/pd-extended/tcl/../extra/smlib'
+} {} 3 {libdir_loader: added 'unauthorized' to the global objectclass path
+} {} 14 {Loaded libdir 'unauthorized' from '/usr/lib/pd-extended/tcl/../extra/unauthorized'
+} {} 3 {libdir_loader: added 'pan' to the global objectclass path
+} {} 14 {Loaded libdir 'pan' from '/usr/lib/pd-extended/tcl/../extra/pan'
+} {} 3 {libdir_loader: added 'hcs' to the global objectclass path
+} {} 14 {Loaded libdir 'hcs' from '/usr/lib/pd-extended/tcl/../extra/hcs'
+} {} 3 {libdir_loader: added 'jmmmp' to the global objectclass path
+} {} 14 {Loaded libdir 'jmmmp' from '/usr/lib/pd-extended/tcl/../extra/jmmmp'
+} {} 3 {libdir_loader: added 'ext13' to the global objectclass path
+} {} 14 {Loaded libdir 'ext13' from '/usr/lib/pd-extended/tcl/../extra/ext13'
+} {} 3 {libdir_loader: added 'ggee' to the global objectclass path
+} {} 14 {Loaded libdir 'ggee' from '/usr/lib/pd-extended/tcl/../extra/ggee'
+} {} 3 {libdir_loader: added 'ekext' to the global objectclass path
+} {} 14 {Loaded libdir 'ekext' from '/usr/lib/pd-extended/tcl/../extra/ekext'
+} {} 3 {libdir_loader: added 'flatgui' to the global objectclass path
+} {} 14 {Loaded libdir 'flatgui' from '/usr/lib/pd-extended/tcl/../extra/flatgui'
+} {} 3 {libdir_loader: added 'chaos' to the global objectclass path
+} {} 14 {Loaded libdir 'chaos' from '/usr/lib/pd-extended/tcl/../extra/chaos'
+} {} 3 {PDP: pure data packet version 0.12.7
+} {} 2 {ALSA output error (restart failed): Broken pipe
+} {} 14 {The Pd window filtered 122 lines
+} {} 2 {expr, expr~, fexpr~ version 0.4 under GNU General Public License 
+} {} 6 {trying to add 'magick' as backend
+} {} 6 {added backend#0 'magick' @ 0x1f3c960
+} {} 6 {trying to add 'SGI' as backend
+} {} 6 {added backend#1 'SGI' @ 0x2028fe0
+} {} 6 {trying to add 'jpeg' as backend
+} {} 6 {added backend#2 'jpeg' @ 0x2029080
+} {} 6 {trying to add 'magick' as backend
+} {} 6 {trying to add 'tiff' as backend
+} {} 6 {added backend#3 'tiff' @ 0x202a510
+} {} 2 {Image loading support:} {} 2 { magick} {} 2 { SGI} {} 2 { jpeg} {} 2 { tiff} {} 2 {
+} {} 5 {loading image '/home/dafe/Desktop/crazymachine/ripple.jpg' with ID:1
+} {} 5 {loading image '/home/dafe/Desktop/crazymachine/ripple.jpg' with ID:2
+} {} 5 {loading image '/home/dafe/Desktop/crazymachine/ripple.jpg' with ID:3
+} {} 6 {reading '/home/dafe/Desktop/crazymachine/ripple.jpg' with ImageMagick
+} {} 5 {magick loading image failed with: Magick: unable to open image `/home/dafe/Desktop/crazymachine/ripple.jpg': No such file or directory @ error/blob.c/OpenBlob/2638
+} {} 6 {reading '/home/dafe/Desktop/crazymachine/ripple.jpg' with libJPEG
+} {} 6 {reading '/home/dafe/Desktop/crazymachine/ripple.jpg' with libTIFF
+} {} 6 {reading '/home/dafe/Desktop/crazymachine/ripple.jpg' with ImageMagick
+} {} 5 {magick loading image failed with: Magick: unable to open image `/home/dafe/Desktop/crazymachine/ripple.jpg': No such file or directory @ error/blob.c/OpenBlob/2638
+} {} 6 {reading '/home/dafe/Desktop/crazymachine/ripple.jpg' with libJPEG
+} {} 6 {reading '/home/dafe/Desktop/crazymachine/ripple.jpg' with libTIFF
+} {} 6 {reading '/home/dafe/Desktop/crazymachine/ripple.jpg' with ImageMagick
+} {} 5 {magick loading image failed with: Magick: unable to open image `/home/dafe/Desktop/crazymachine/ripple.jpg': No such file or directory @ error/blob.c/OpenBlob/2638
+} {} 6 {reading '/home/dafe/Desktop/crazymachine/ripple.jpg' with libJPEG
+} {} 6 {reading '/home/dafe/Desktop/crazymachine/ripple.jpg' with libTIFF
+} {} 2 {GEM: Direct Rendering enabled!
+} {} 4 {GEM: GLEW version 1.5.4
+} {} 3 {GEM: Start rendering
+} .x1f25020 1 {[pix_image]: failed to load image '/home/dafe/Desktop/crazymachine/ripple.jpg'} {} 2 {
+} {} 4 {... you might be able to track this down from the Find menu.
+} .x1f3faf0 1 {[pix_image]: failed to load image '/home/dafe/Desktop/crazymachine/ripple.jpg'} {} 2 {
+} .x1f44690 1 {[pix_image]: failed to load image '/home/dafe/Desktop/crazymachine/ripple.jpg'} {} 2 {
+} {} 2 {ALSA output error (restart failed): Broken pipe
+} {} 5 {loading image '/home/dafe/Desktop/crazymachine/ripple.jpg' with ID:4
+} {} 6 {reading '/home/dafe/Desktop/crazymachine/ripple.jpg' with ImageMagick
+} {} 4 {loaded image '/home/dafe/Desktop/crazymachine/ripple.jpg'
+} {} 2 {ALSA output error (restart failed): Broken pipe
+} {} 1 {/home/dafe/Desktop/crazymachine/rippletest.pd: Permission denied} {} 2 {
+}
