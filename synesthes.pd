@@ -1,8 +1,8 @@
-#N canvas 202 192 743 459 10;
+#N canvas 203 218 743 459 10;
 #X obj 228 183 / 12;
 #X obj 262 211 int;
 #X obj 236 229 -;
-#X obj 101 101 cnv 20 60 20 empty \$0-color empty 20 12 0 14 -262144
+#X obj 101 101 cnv 20 60 20 empty \$0-color empty 20 12 0 14 -1024
 -262144 0;
 #X msg 470 135 bang;
 #N canvas 15 207 508 444 RGB_____________ 0;
@@ -81,12 +81,12 @@
 #X obj 302 317 tan;
 #X obj 341 268 expr ($f1+1)*128;
 #X obj 235 273 * 3.141;
-#X obj 101 124 vsl 20 40 0 255 0 0 empty empty empty 0 -8 0 10 -258113
--1 -1 3900 1;
-#X obj 121 124 vsl 20 40 0 255 0 0 empty empty empty 0 -8 0 10 -4034
--1 -1 3900 1;
-#X obj 141 124 vsl 20 40 0 255 0 0 empty empty empty 0 -8 0 10 -4160
--1 -1 3900 1;
+#X obj 101 122 vsl 20 40 0 255 0 0 empty empty empty 0 -8 0 10 -258113
+-1 -1 60 1;
+#X obj 121 122 vsl 20 40 0 255 0 0 empty empty empty 0 -8 0 10 -4034
+-1 -1 959 1;
+#X obj 141 122 vsl 20 40 0 255 0 0 empty empty empty 0 -8 0 10 -4160
+-1 -1 3856 1;
 #X obj 520 131 int;
 #X obj 560 141 int;
 #X obj 600 151 int;
