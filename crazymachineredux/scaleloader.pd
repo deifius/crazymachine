@@ -1,12 +1,12 @@
-#N canvas 15 93 814 511 10;
+#N canvas 17 89 814 511 10;
 #X obj 212 5 inlet;
 #X obj 224 261 outlet;
 #X obj 340 262 outlet;
-#X obj 162 101 cnv 15 20 58 empty empty Tonic -8 28 0 9 -257998 -66577
+#X obj 162 101 cnv 15 20 58 empty empty Tonic -8 28 0 9 #f8fc34 #404040
 0;
-#X obj 164 140 cnv 15 20 20 empty empty (midi) -9 12 0 8 -257998 -66577
+#X obj 164 140 cnv 15 20 20 empty empty (midi) -9 12 0 8 #f8fc34 #404040
 0;
-#X floatatom 163 134 3 20 90 0 - #0-2Tonic #0-Tonic;
+#X floatatom 163 134 3 20 90 0 - #0-2Tonic #0-Tonic 0 0 1, f 3;
 #X obj 212 27 sel major minor blue whole octaton;
 #X msg 214 48 0;
 #X msg 234 68 1;
@@ -15,31 +15,32 @@
 #X msg 305 46 4;
 #X obj 230 100 s \$0-2ScaleType;
 #X obj 504 79 s \$0-2Tonic;
-#X obj 176 158 cnv 1 8 1 empty empty empty 20 12 0 14 -1 -66577 0;
+#X obj 176 158 cnv 1 8 1 empty empty empty 20 12 0 14 #000000 #404040
+0;
 #X obj 206 134 r \$0-ScaleType;
 #X obj 265 212 r \$0-Tonic;
 #N canvas 0 22 458 308 (subpatch) 0;
-#X array major 11 float 1;
+#X array major 11 float 1 black black;
 #A 0 0 2 4 5 7 9 11 12 14 16 17;
 #X coords 0 16 10 0 20 14 1;
 #X restore 460 109 graph;
 #N canvas 0 22 462 312 (subpatch) 0;
-#X array minor 11 float 1;
+#X array minor 11 float 1 black black;
 #A 0 0 2 3 5 7 8 10 12 14 15 17;
 #X coords 0 16 10 0 20 14 1;
 #X restore 459 140 graph;
 #N canvas 0 22 458 308 (subpatch) 0;
-#X array blue 11 float 1;
+#X array blue 11 float 1 black black;
 #A 0 0 2 5 6 7 9 10 12 17 18 19;
 #X coords 0 16 10 0 20 14 1;
 #X restore 460 169 graph;
 #N canvas 0 22 462 312 (subpatch) 0;
-#X array whole 11 float 1;
+#X array whole 11 float 1 black black;
 #A 0 0 2 4 6 8 10 12 14 16 18 20;
 #X coords 0 16 10 0 20 14 1;
 #X restore 459 200 graph;
 #N canvas 0 22 462 312 (subpatch) 0;
-#X array octaton 11 float 1;
+#X array octaton 11 float 1 black black;
 #A 0 0 2 3 5 6 8 9 11 12 14 16;
 #X coords 0 16 10 0 20 14 1;
 #X restore 459 230 graph;
@@ -67,9 +68,9 @@
 #X restore 206 160 pd tableselector;
 #X obj 242 233 + 69;
 #X obj 340 114 countto 15;
-#X floatatom 164 233 5 0 0 0 - - -;
-#X floatatom 167 180 5 0 0 0 - - -;
-#X floatatom 328 154 5 0 0 0 - - -;
+#X floatatom 164 233 5 0 0 0 - - - 0 0 1, f 5;
+#X floatatom 167 180 5 0 0 0 - - - 0 0 1, f 5;
+#X floatatom 328 154 5 0 0 0 - - - 0 0 1, f 5;
 #X msg 388 64 0;
 #X msg 361 64 1;
 #X obj 358 89 metro 50;
@@ -79,7 +80,7 @@
 #X obj 35 29 scalecollector;
 #X text 2 9 this is an object to attch to;
 #X text 9 46 to load standard scales;
-#N canvas 84 131 489 501 save 1;
+#N canvas 84 131 489 501 save 0;
 #X obj 247 342 tabread \$0-saveparam;
 #X obj 309 244 unpack f f;
 #X msg 282 160 \$1 0;
@@ -167,19 +168,19 @@
 #X connect 37 1 38 0;
 #X connect 40 0 23 0;
 #X restore 473 276 pd save;
-#X obj 153 101 bng 15 250 50 0 empty empty save 0 8 0 6 -262144 -258113
--258113;
-#X obj 168 101 bng 15 250 50 0 empty empty open 0 8 0 6 -262144 -4160
--4160;
-#X obj 101 101 cnv 15 50 58 empty empty empty 20 12 0 14 -262144 -66577
+#X obj 153 101 bng 15 250 50 0 empty empty save 0 8 0 6 #fcfcfc #fc0400
+#fc0400 1;
+#X obj 168 101 bng 15 250 50 0 empty empty open 0 8 0 6 #fcfcfc #0400fc
+#0400fc 1;
+#X obj 101 101 cnv 15 50 58 empty empty empty 20 12 0 14 #fcfcfc #404040
 0;
 #X obj 101 100 vradio 12 1 0 5 \$0-ScaleType \$0-2ScaleType empty 0
--8 0 10 -262144 -1 -1 0;
-#X text 114 99 major;
+-8 0 10 #fcfcfc #000000 #000000 0 1;
+#X text 114 100 major;
 #X text 114 111 minor;
 #X text 114 123 blue;
 #X text 114 135 whole;
-#X text 114 146 octaton;
+#X text 112 143 octaton;
 #X obj 447 31 route load;
 #X obj 447 53 s \$0-load;
 #X connect 0 0 6 0;

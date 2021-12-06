@@ -1,4 +1,4 @@
-#N canvas 219 68 568 408 10;
+#N canvas 223 60 568 408 10;
 #X obj 35 213 outlet~;
 #N canvas 347 160 677 522 WavShape 0;
 #X obj 6 74 sel 0 1 2 3 4 5;
@@ -50,12 +50,12 @@
 #X connect 9 0 2 0;
 #X restore 59 167 pd WavShape;
 #X obj 35 190 tabosc4~ \$0-To;
-#X obj 1 38 cnv 15 115 45 empty quiggle empty 110 5 0 20 -133184 -66577
+#X obj 1 38 cnv 15 115 45 empty quiggle empty 110 5 0 20 #8080fc #404040
 0;
-#X obj 1 38 cnv 15 90 46 empty quiggull 34 34 0 0 4 -262144 -262144
+#X obj 1 38 cnv 15 90 46 empty quiggull 34 34 0 0 4 #fcfcfc #fcfcfc
 0;
 #N canvas 0 22 458 308 (subpatch) 0;
-#X array \$0-To 515 float 1;
+#X array \$0-To 515 float 1 black black;
 #A 0 -0.00383505 0 0.00383505 0.00745528 0.0106547 0.0132445 0.015061
 0.0159719 0.0158824 0.0147385 0.0125296 0.00928907 0.00509249 5.51452e-05
 -0.00567287 -0.0119127 -0.0184638 -0.0251125 -0.03164 -0.037832 -0.0434869
@@ -133,7 +133,8 @@
 #X obj 88 100 inlet;
 #X obj -7 128 r \$0-FreqValue;
 #X obj 145 189 s \$0-2FreqValue;
-#X obj 1 70 cnv 2 1 1 empty \$0-Number 1hz 0 7 0 14 -233017 -1 0;
+#X obj 1 70 cnv 2 1 1 empty \$0-Number 1hz 0 7 0 14 #e0e0e0 #000000
+0;
 #X obj 13 302 s \$0-Number;
 #X msg 13 256 set label \$1hz;
 #X obj 114 218 r \$0-2FreqValue;
@@ -141,16 +142,17 @@
 #X obj 114 237 float;
 #X obj -16 203 del 500;
 #X obj -16 173 bang;
-#X obj 1 22 cnv 15 115 16 empty empty WaveShape 6 8 0 14 -133184 -1
+#X obj 1 22 cnv 15 115 16 empty empty WaveShape 6 8 0 14 #8080fc #000000
 0;
-#X text 91 25 sin;
+#X text 91 26 sin;
 #X text 91 36 squ;
 #X text 91 48 tri;
 #X text 91 59 saw;
-#X text 91 69 pul;
-#X obj 0 38 cnv 12 80 12 empty empty empty 20 12 0 14 -1 -66577 0;
+#X text 92 66 pul;
+#X obj 0 38 cnv 12 80 12 empty empty empty 20 12 0 14 #000000 #404040
+0;
 #X obj 80 28 vradio 11 1 0 5 \$0-wavpreset \$0-2wavpreset empty 0 -6
-0 8 -262144 -1 -1 3;
+0 8 #fcfcfc #000000 #000000 3 1;
 #N canvas 441 210 458 308 ctlvalues 0;
 #X obj 128 21 inlet;
 #X obj 128 51 route shape;
@@ -251,10 +253,10 @@
 #X connect 39 0 12 0;
 #X connect 40 0 23 0;
 #X restore -6 100 pd save;
-#X obj 5 42 bng 15 250 50 0 empty empty save 0 8 0 6 -262144 -258113
--258113;
-#X obj 20 42 bng 15 250 50 0 empty empty open 0 8 0 6 -262144 -4160
--4160;
+#X obj 5 42 bng 15 250 50 0 empty empty save 0 8 0 6 #fcfcfc #fc0400
+#fc0400 1;
+#X obj 20 42 bng 15 250 50 0 empty empty open 0 8 0 6 #fcfcfc #0400fc
+#0400fc 1;
 #X obj 88 123 route load;
 #X obj 88 145 s \$0-load;
 #X connect 2 0 0 0;
