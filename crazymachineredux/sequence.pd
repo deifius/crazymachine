@@ -1,97 +1,97 @@
-#N canvas 69 89 758 311 10;
+#N canvas 71 85 758 311 10;
 #X obj 334 157 + 1;
 #X obj 334 181 % 4;
-#X obj 100 57 hradio 10 1 0 15 \$0-Sequence \$0-2Sequence empty 0 -8
-0 10 -262144 -1 -1 0;
+#X obj 100 57 hradio 10 1 0 32 \$0-Sequence \$0-2Sequence empty 0 -8
+0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 339 271 s \$0-2Sequence;
 #X msg 333 216 set \$1;
 #X msg 424 165 number \$1;
 #X obj 422 193 r \$0-Sequence;
 #X obj 307 242 bang;
-#X obj 100 45 tgl 10 0 \$0-Event0 \$0-2Event0 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 110 45 tgl 10 0 \$0-Event1 \$0-2Event1 empty 17 7 0 10 -262144
--1 -1 0 36;
-#X obj 120 45 tgl 10 0 \$0-Event2 \$0-2Event2 empty 17 7 0 10 -262144
--1 -1 0 30.7599;
+#X obj 100 45 tgl 10 0 \$0-Event0 \$0-2Event0 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 1 1;
+#X obj 110 45 tgl 10 0 \$0-Event1 \$0-2Event1 empty 17 7 0 10 #fcfcfc
+#000000 #000000 36 36 1;
+#X obj 120 45 tgl 10 0 \$0-Event2 \$0-2Event2 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 30.7599 1;
 #X obj 115 258 s \$0-CoverUp;
 #X obj 125 133 * 10;
 #X obj 283 92 int;
 #X obj 99 188 abs;
 #X obj 422 236 outlet;
-#X obj 103 70 hsl 355 8 1 36 0 0 \$0-Size \$0-2Size empty -2 -8 0 10
--262144 -1 -1 14200 1;
-#X obj 130 45 tgl 10 0 \$0-Event3 \$0-2Event3 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 140 45 tgl 10 0 \$0-Event4 \$0-2Event4 empty 17 7 0 10 -262144
--1 -1 15.0395 15.0395;
-#X obj 150 45 tgl 10 0 \$0-Event5 \$0-2Event5 empty 17 7 0 10 -262144
--1 -1 0 36;
-#X obj 160 45 tgl 10 0 \$0-Event6 \$0-2Event6 empty 17 7 0 10 -262144
--1 -1 0 36;
-#X obj 170 45 tgl 10 0 \$0-Event7 \$0-2Event7 empty 17 7 0 10 -262144
--1 -1 0 30.7599;
-#X obj 180 45 tgl 10 0 \$0-Event8 \$0-2Event8 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 190 45 tgl 10 0 \$0-Event9 \$0-2Event9 empty 17 7 0 10 -262144
--1 -1 15.0395 15.0395;
-#X obj 200 45 tgl 10 0 \$0-Event10 \$0-2Event10 empty 17 7 0 10 -262144
--1 -1 0 36;
-#X obj 210 45 tgl 10 0 \$0-Event11 \$0-2Event11 empty 17 7 0 10 -262144
--1 -1 0 36;
-#X obj 220 45 tgl 10 0 \$0-Event12 \$0-2Event12 empty 17 7 0 10 -262144
--1 -1 0 30.7599;
-#X obj 230 45 tgl 10 0 \$0-Event13 \$0-2Event13 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 240 45 tgl 10 0 \$0-Event14 \$0-2Event14 empty 17 7 0 10 -262144
--1 -1 15.0395 15.0395;
-#X obj 250 45 tgl 10 0 \$0-Event15 \$0-2Event15 empty 17 7 0 10 -262144
--1 -1 0 36;
-#X obj 260 45 tgl 10 0 \$0-Event16 \$0-2Event16 empty 17 7 0 10 -262144
--1 -1 0 36;
-#X obj 270 45 tgl 10 0 \$0-Event17 \$0-2Event17 empty 17 7 0 10 -262144
--1 -1 0 30.7599;
-#X obj 280 45 tgl 10 0 \$0-Event18 \$0-2Event18 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 290 45 tgl 10 0 \$0-Event19 \$0-2Event19 empty 17 7 0 10 -262144
--1 -1 15.0395 15.0395;
-#X obj 300 45 tgl 10 0 \$0-Event20 \$0-2Event20 empty 17 7 0 10 -262144
--1 -1 0 36;
-#X obj 310 45 tgl 10 0 \$0-Event21 \$0-2Event21 empty 17 7 0 10 -262144
--1 -1 0 36;
-#X obj 320 45 tgl 10 0 \$0-Event22 \$0-2Event22 empty 17 7 0 10 -262144
--1 -1 0 30.7599;
-#X obj 330 45 tgl 10 0 \$0-Event23 \$0-2Event23 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 340 45 tgl 10 0 \$0-Event24 \$0-2Event24 empty 17 7 0 10 -262144
--1 -1 15.0395 15.0395;
-#X obj 350 45 tgl 10 0 \$0-Event25 \$0-2Event25 empty 17 7 0 10 -262144
--1 -1 0 36;
-#X obj 360 45 tgl 10 0 \$0-Event26 \$0-2Event26 empty 17 7 0 10 -262144
--1 -1 0 36;
-#X obj 370 45 tgl 10 0 \$0-Event27 \$0-2Event27 empty 17 7 0 10 -262144
--1 -1 0 30.7599;
-#X obj 380 45 tgl 10 0 \$0-Event28 \$0-2Event28 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 390 45 tgl 10 0 \$0-Event29 \$0-2Event29 empty 17 7 0 10 -262144
--1 -1 15.0395 15.0395;
-#X obj 400 45 tgl 10 0 \$0-Event30 \$0-2Event30 empty 17 7 0 10 -262144
--1 -1 0 36;
-#X obj 410 45 tgl 10 0 \$0-Event31 \$0-2Event31 empty 17 7 0 10 -262144
--1 -1 0 36;
-#X obj 420 45 tgl 10 0 \$0-Event32 \$0-2Even32 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 430 45 tgl 10 0 \$0-Event33 \$0-2Event33 empty 17 7 0 10 -262144
--1 -1 0 1;
-#X obj 440 45 tgl 10 0 \$0-Event34 \$0-2Event34 empty 17 7 0 10 -262144
--1 -1 15.0395 15.0395;
-#X obj 450 45 tgl 10 0 \$0-Event35 \$0-2Event35 empty 17 7 0 10 -262144
--1 -1 0 36;
-#X obj 251 46 cnv 1 208 21 empty \$0-CoverUp ]$1 0 12 0 20 -262144
--66577 0;
+#X obj 102 69 hsl 313 8 1 32 0 0 \$0-Size \$0-2Size empty -2 -8 0 10
+#fcfcfc #000000 #000000 31200 1 0 1;
+#X obj 130 45 tgl 10 0 \$0-Event3 \$0-2Event3 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 1 1;
+#X obj 140 45 tgl 10 0 \$0-Event4 \$0-2Event4 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 15.0395 1;
+#X obj 150 45 tgl 10 0 \$0-Event5 \$0-2Event5 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 36 1;
+#X obj 160 45 tgl 10 0 \$0-Event6 \$0-2Event6 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 36 1;
+#X obj 170 45 tgl 10 0 \$0-Event7 \$0-2Event7 empty 17 7 0 10 #fcfcfc
+#000000 #000000 30.7599 30.7599 1;
+#X obj 180 45 tgl 10 0 \$0-Event8 \$0-2Event8 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 1 1;
+#X obj 190 45 tgl 10 0 \$0-Event9 \$0-2Event9 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 15.0395 1;
+#X obj 200 45 tgl 10 0 \$0-Event10 \$0-2Event10 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 36 1;
+#X obj 210 45 tgl 10 0 \$0-Event11 \$0-2Event11 empty 17 7 0 10 #fcfcfc
+#000000 #000000 36 36 1;
+#X obj 220 45 tgl 10 0 \$0-Event12 \$0-2Event12 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 30.7599 1;
+#X obj 230 45 tgl 10 0 \$0-Event13 \$0-2Event13 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 1 1;
+#X obj 240 45 tgl 10 0 \$0-Event14 \$0-2Event14 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 15.0395 1;
+#X obj 250 45 tgl 10 0 \$0-Event15 \$0-2Event15 empty 17 7 0 10 #fcfcfc
+#000000 #000000 36 36 1;
+#X obj 260 45 tgl 10 0 \$0-Event16 \$0-2Event16 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 36 1;
+#X obj 270 45 tgl 10 0 \$0-Event17 \$0-2Event17 empty 17 7 0 10 #fcfcfc
+#000000 #000000 30.7599 30.7599 1;
+#X obj 280 45 tgl 10 0 \$0-Event18 \$0-2Event18 empty 17 7 0 10 #fcfcfc
+#000000 #000000 1 1 1;
+#X obj 290 45 tgl 10 0 \$0-Event19 \$0-2Event19 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 15.0395 1;
+#X obj 300 45 tgl 10 0 \$0-Event20 \$0-2Event20 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 36 1;
+#X obj 310 45 tgl 10 0 \$0-Event21 \$0-2Event21 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 36 1;
+#X obj 320 45 tgl 10 0 \$0-Event22 \$0-2Event22 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 30.7599 1;
+#X obj 330 45 tgl 10 0 \$0-Event23 \$0-2Event23 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 1 1;
+#X obj 340 45 tgl 10 0 \$0-Event24 \$0-2Event24 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 15.0395 1;
+#X obj 350 45 tgl 10 0 \$0-Event25 \$0-2Event25 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 36 1;
+#X obj 360 45 tgl 10 0 \$0-Event26 \$0-2Event26 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 36 1;
+#X obj 370 45 tgl 10 0 \$0-Event27 \$0-2Event27 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 30.7599 1;
+#X obj 380 45 tgl 10 0 \$0-Event28 \$0-2Event28 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 1 1;
+#X obj 390 45 tgl 10 0 \$0-Event29 \$0-2Event29 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 15.0395 1;
+#X obj 400 45 tgl 10 0 \$0-Event30 \$0-2Event30 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 36 1;
+#X obj 410 45 tgl 10 0 \$0-Event31 \$0-2Event31 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 36 1;
+#X obj 420 45 tgl 10 0 \$0-Event32 \$0-2Even32 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 1 1;
+#X obj 430 45 tgl 10 0 \$0-Event33 \$0-2Event33 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 1 1;
+#X obj 440 45 tgl 10 0 \$0-Event34 \$0-2Event34 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 15.0395 1;
+#X obj 450 45 tgl 10 0 \$0-Event35 \$0-2Event35 empty 17 7 0 10 #fcfcfc
+#000000 #000000 0 36 1;
+#X obj 421 46 cnv 1 38 21 empty \$0-CoverUp ]32 0 8 0 20 #fcfcfc #404040
+0;
 #X obj 428 102 inlet;
-#X msg 250 163 label ]$1;
-#X msg 252 129 set label ]$1;
+#X msg 250 163 label ]32;
+#X msg 252 129 set label ]\$1;
 #X obj 199 143 bang;
 #X obj 473 266 outlet;
 #X obj 561 125 s \$0-2Size;
@@ -394,7 +394,7 @@
 #X connect 143 0 138 1;
 #X restore 511 172 pd tableupdate;
 #X obj 473 225 tabread \$0-read;
-#N canvas 148 86 772 590 save 1;
+#N canvas 150 82 772 615 save 1;
 #X obj 477 312 tabread \$0-saveparam;
 #X obj 559 214 unpack f f;
 #X msg 532 130 \$1 0;
@@ -574,10 +574,10 @@
 #X connect 42 0 22 0;
 #X connect 43 0 38 0;
 #X restore 368 99 pd save;
-#X obj 460 46 bng 15 250 50 0 empty empty save 0 8 0 6 -262144 -258113
--258113;
-#X obj 460 62 bng 15 250 50 0 empty empty open 0 8 0 6 -262144 -4160
--4160;
+#X obj 460 46 bng 15 250 50 0 empty empty save 0 8 0 6 #fcfcfc #fc0400
+#fc0400 1;
+#X obj 460 62 bng 15 250 50 0 empty empty open 0 8 0 6 #fcfcfc #0400fc
+#0400fc 1;
 #X obj 473 246 sel 1;
 #X obj 527 93 route value size load;
 #X obj 527 68 inlet;
