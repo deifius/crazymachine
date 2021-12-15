@@ -1,4 +1,4 @@
-#N canvas 193 51 613 687 10;
+#N canvas 195 51 613 687 10;
 #N canvas 153 34 478 330 CTl2Mid 0;
 #X obj 107 5 inlet;
 #X obj 102 129 sel 1 0;
@@ -201,7 +201,7 @@
 #X connect 16 0 3 0;
 #X restore 118 71 pd delta;
 #X obj 96 347 piano;
-#X obj 97 144 scaleloader;
+#X obj 97 108 scaleloader;
 #X floatatom 66 64 5 0 0 0 - - - 0 0 1, f 5;
 #X obj 464 164 + 40;
 #X obj 173 488 *~ 0.54;

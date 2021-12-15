@@ -1,12 +1,12 @@
-#N canvas 17 89 814 511 10;
+#N canvas 530 125 814 511 10;
 #X obj 212 5 inlet;
 #X obj 224 261 outlet;
 #X obj 340 262 outlet;
-#X obj 162 101 cnv 15 20 58 empty empty Tonic -8 28 0 9 #f8fc34 #404040
+#X obj 164 101 cnv 15 20 58 empty empty Tonic -8 18 0 9 #f8fc34 #404040
 0;
-#X obj 164 140 cnv 15 20 20 empty empty (midi) -9 12 0 8 #f8fc34 #404040
+#X obj 166 146 cnv 15 20 20 empty empty (midi) -9 12 0 8 #f8fc34 #404040
 0;
-#X floatatom 163 134 3 20 90 0 - #0-2Tonic #0-Tonic 0 0 1, f 3;
+#X floatatom 165 138 3 20 90 0 - #0-2Tonic #0-Tonic 0 0 1, f 3;
 #X obj 212 27 sel major minor blue whole octaton;
 #X msg 214 48 0;
 #X msg 234 68 1;
@@ -69,7 +69,7 @@
 #X obj 242 233 + 69;
 #X obj 340 114 countto 15;
 #X floatatom 164 233 5 0 0 0 - - - 0 0 1, f 5;
-#X floatatom 167 180 5 0 0 0 - - - 0 0 1, f 5;
+#X floatatom 169 197 5 0 0 0 - - - 0 0 1, f 5;
 #X floatatom 328 154 5 0 0 0 - - - 0 0 1, f 5;
 #X msg 388 64 0;
 #X msg 361 64 1;
@@ -168,21 +168,140 @@
 #X connect 37 1 38 0;
 #X connect 40 0 23 0;
 #X restore 473 276 pd save;
-#X obj 153 101 bng 15 250 50 0 empty empty save 0 8 0 6 #fcfcfc #fc0400
+#X obj 154 101 bng 15 250 50 0 empty empty save 0 8 0 6 #fcfcfc #fc0400
 #fc0400 1;
-#X obj 168 101 bng 15 250 50 0 empty empty open 0 8 0 6 #fcfcfc #0400fc
+#X obj 169 101 bng 15 250 50 0 empty empty open 0 8 0 6 #fcfcfc #0400fc
 #0400fc 1;
 #X obj 101 101 cnv 15 50 58 empty empty empty 20 12 0 14 #fcfcfc #404040
 0;
-#X obj 101 100 vradio 12 1 0 5 \$0-ScaleType \$0-2ScaleType empty 0
+#X obj 101 100 vradio 12 0 0 7 \$0-ScaleType \$0-2ScaleType empty 0
 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X text 114 100 major;
 #X text 114 111 minor;
 #X text 114 123 blue;
 #X text 114 135 whole;
-#X text 112 143 octaton;
+#X text 113 147 octaton;
 #X obj 447 31 route load;
 #X obj 447 53 s \$0-load;
+#X text 112 170 pentatonic;
+#N canvas 464 251 600 300 miditonote 0;
+#X obj 227 76 % 12;
+#X obj 93 104 sel 0 1 2 3 4 5 6 7 8 9 10 11;
+#X floatatom 41 18 5 0 0 0 - - - 0 0 1, f 5;
+#X floatatom 41 67 5 0 0 0 - - - 0 0 1, f 5;
+#X obj 41 42 ftom;
+#X obj 41 91 % 12;
+#X floatatom 41 116 5 0 0 0 - - - 0 0 1, f 5;
+#X msg 198 142 a;
+#X msg 212 195 b;
+#X msg 78 136 c;
+#X msg 202 166 a#;
+#X msg 78 161 c#;
+#X msg 92 185 d;
+#X msg 103 210 d#;
+#X msg 124 143 e;
+#X msg 133 164 f;
+#X msg 141 188 f#;
+#X msg 153 208 g;
+#X msg 159 142 g#;
+#X obj 283 108 sel 0 1 2 3 4 5 6 7 8 9 10 11;
+#X msg 268 140 C;
+#X msg 268 165 Db;
+#X msg 282 189 D;
+#X msg 293 214 Eb;
+#X msg 314 147 E;
+#X msg 323 168 F;
+#X msg 331 192 Gb;
+#X msg 343 212 G;
+#X msg 349 146 Ab;
+#X msg 388 146 A;
+#X msg 392 170 Bb;
+#X msg 402 199 B;
+#X obj 227 21 inlet midi number int only;
+#X obj 228 49 int;
+#X obj 41 251 symbol;
+#X obj 41 276 outlet symbol note name sharp + low;
+#X obj 273 255 symbol;
+#X obj 273 280 outlet symbol note name flat + cap;
+#X connect 0 0 1 0;
+#X connect 0 0 19 0;
+#X connect 1 0 9 0;
+#X connect 1 1 11 0;
+#X connect 1 2 12 0;
+#X connect 1 3 13 0;
+#X connect 1 4 14 0;
+#X connect 1 5 15 0;
+#X connect 1 6 16 0;
+#X connect 1 7 17 0;
+#X connect 1 8 18 0;
+#X connect 1 9 7 0;
+#X connect 1 10 10 0;
+#X connect 1 11 8 0;
+#X connect 2 0 4 0;
+#X connect 3 0 5 0;
+#X connect 4 0 3 0;
+#X connect 5 0 6 0;
+#X connect 7 0 34 0;
+#X connect 8 0 34 0;
+#X connect 9 0 34 0;
+#X connect 10 0 34 0;
+#X connect 11 0 34 0;
+#X connect 12 0 34 0;
+#X connect 13 0 34 0;
+#X connect 14 0 34 0;
+#X connect 15 0 34 0;
+#X connect 16 0 34 0;
+#X connect 17 0 34 0;
+#X connect 18 0 34 0;
+#X connect 19 0 20 0;
+#X connect 19 1 21 0;
+#X connect 19 2 22 0;
+#X connect 19 3 23 0;
+#X connect 19 4 24 0;
+#X connect 19 5 25 0;
+#X connect 19 6 26 0;
+#X connect 19 7 27 0;
+#X connect 19 8 28 0;
+#X connect 19 9 29 0;
+#X connect 19 10 30 0;
+#X connect 19 11 31 0;
+#X connect 20 0 36 0;
+#X connect 21 0 36 0;
+#X connect 22 0 36 0;
+#X connect 23 0 36 0;
+#X connect 24 0 36 0;
+#X connect 25 0 36 0;
+#X connect 26 0 36 0;
+#X connect 27 0 36 0;
+#X connect 28 0 36 0;
+#X connect 29 0 36 0;
+#X connect 30 0 36 0;
+#X connect 31 0 36 0;
+#X connect 32 0 33 0;
+#X connect 33 0 0 0;
+#X connect 34 0 35 0;
+#X connect 36 0 37 0;
+#X restore 22 222 pd miditonote;
+#X obj 21 200 r \$0-Tonic;
+#X msg 20 247 set \$1;
+#X msg 63 266 g#;
+#X obj 149 130 cnv 15 15 15 empty \$0-notename g# 0 6 0 12 #e0e0e0
+#404040 0;
+#X obj 107 268 s \$0-notename, f 14;
+#X msg 107 245 label \$1;
+#N canvas 0 22 462 312 (subpatch) 0;
+#X array ocarina 11 float 1 black black;
+#A 0 0 2 4 6 8 10 12 14 16 18 20;
+#X coords 0 16 10 0 20 14 1;
+#X restore 507 187 graph;
+#X text 113 160 ocarina;
+#N canvas 0 22 462 312 (subpatch) 0;
+#X array pentatonic 11 float 1 black black;
+#A 0 0 2 4 6 8 10 12 14 16 18 20;
+#X coords 0 16 10 0 20 14 1;
+#X restore 505 212 graph;
+#X text 7 88 ocarina and pentatonicare only theoreticallyimplementedno
+testingyet;
 #X connect 0 0 6 0;
 #X connect 0 0 30 0;
 #X connect 6 0 7 0;
@@ -219,4 +338,9 @@
 #X connect 40 0 38 1;
 #X connect 48 0 49 0;
 #X connect 48 1 13 0;
-#X coords 0 -1 1 1 85 60 1 100 100;
+#X connect 51 0 53 0;
+#X connect 51 0 57 0;
+#X connect 52 0 51 0;
+#X connect 53 0 54 0;
+#X connect 57 0 56 0;
+#X coords 0 -1 1 1 85 90 1 100 100;
