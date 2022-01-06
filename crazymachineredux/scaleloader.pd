@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+#N canvas 229 165 814 511 10;
+#X obj 212 -5 inlet;
+#X obj 224 261 outlet;
+#X obj 340 262 outlet;
+#X obj 162 101 cnv 15 20 58 empty empty Tonic -8 28 0 9 #f8fc34 #404040
+0;
+#X obj 158 125 cnv 15 20 20 empty empty (midi) -9 12 0 8 #f8fc34 #404040
+0;
+#X floatatom 157 119 3 20 90 0 - #0-2Tonic #0-Tonic 0 0 1, f 3;
+=======
 #N canvas 530 125 814 511 10;
 #X obj 212 5 inlet;
 #X obj 224 261 outlet;
@@ -8,13 +19,18 @@
 0;
 #X floatatom 165 138 3 20 90 0 - #0-2Tonic #0-Tonic 0 0 1, f 3;
 #X obj 212 27 sel major minor blue whole octaton;
+>>>>>>> a6e3f481d483c26f7ee6ab9f76117165231a4001
 #X msg 214 48 0;
 #X msg 234 68 1;
 #X msg 254 49 2;
 #X msg 274 68 3;
 #X msg 305 46 4;
 #X obj 230 100 s \$0-2ScaleType;
+<<<<<<< HEAD
+#X obj 591 117 s \$0-2Tonic;
+=======
 #X obj 504 79 s \$0-2Tonic;
+>>>>>>> a6e3f481d483c26f7ee6ab9f76117165231a4001
 #X obj 176 158 cnv 1 8 1 empty empty empty 20 12 0 14 #000000 #404040
 0;
 #X obj 206 134 r \$0-ScaleType;
@@ -40,36 +56,47 @@
 #X coords 0 16 10 0 20 14 1;
 #X restore 459 200 graph;
 #N canvas 0 22 462 312 (subpatch) 0;
+<<<<<<< HEAD
+#X array octatonic 11 float 1 black black;
+=======
 #X array octaton 11 float 1 black black;
+>>>>>>> a6e3f481d483c26f7ee6ab9f76117165231a4001
 #A 0 0 2 3 5 6 8 9 11 12 14 16;
 #X coords 0 16 10 0 20 14 1;
-#X restore 459 230 graph;
-#X obj 224 191 tabread major;
-#N canvas 424 211 454 304 tableselector 0;
+#X restore 460 230 graph;
+#N canvas 426 207 454 304 tableselector 0;
 #X obj 107 25 inlet;
 #X obj 73 254 outlet;
-#X obj 79 91 sel 0 1 2 3 4;
 #X msg 73 137 set major;
-#X msg 113 217 set octaton;
 #X msg 103 197 set whole;
 #X msg 93 177 set blue;
 #X msg 83 157 set minor;
-#X connect 0 0 2 0;
-#X connect 2 0 3 0;
-#X connect 2 1 7 0;
-#X connect 2 2 6 0;
-#X connect 2 3 5 0;
-#X connect 2 4 4 0;
+#X obj 79 91 sel 0 1 2 3 4 5 6;
+#X msg 133 257 set pentatonic;
+#X msg 123 237 set octatonic;
+#X msg 113 217 set ocarina;
+#X connect 0 0 6 0;
+#X connect 2 0 1 0;
 #X connect 3 0 1 0;
 #X connect 4 0 1 0;
 #X connect 5 0 1 0;
-#X connect 6 0 1 0;
-#X connect 7 0 1 0;
+#X connect 6 0 2 0;
+#X connect 6 1 5 0;
+#X connect 6 2 4 0;
+#X connect 6 3 3 0;
+#X connect 6 4 9 0;
+#X connect 6 5 8 0;
+#X connect 6 6 7 0;
+#X connect 9 0 1 0;
 #X restore 206 160 pd tableselector;
 #X obj 242 233 + 69;
 #X obj 340 114 countto 15;
 #X floatatom 164 233 5 0 0 0 - - - 0 0 1, f 5;
+<<<<<<< HEAD
+#X floatatom 167 180 5 0 0 0 - - - 0 0 1, f 5;
+=======
 #X floatatom 169 197 5 0 0 0 - - - 0 0 1, f 5;
+>>>>>>> a6e3f481d483c26f7ee6ab9f76117165231a4001
 #X floatatom 328 154 5 0 0 0 - - - 0 0 1, f 5;
 #X msg 388 64 0;
 #X msg 361 64 1;
@@ -168,15 +195,82 @@
 #X connect 37 1 38 0;
 #X connect 40 0 23 0;
 #X restore 473 276 pd save;
+<<<<<<< HEAD
+#X obj 153 101 bng 15 250 50 0 empty empty save 0 8 0 6 #fcfcfc #fc0400
+#fc0400 1;
+#X obj 168 101 bng 15 250 50 0 empty empty open 0 8 0 6 #fcfcfc #0400fc
+=======
 #X obj 154 101 bng 15 250 50 0 empty empty save 0 8 0 6 #fcfcfc #fc0400
 #fc0400 1;
 #X obj 169 101 bng 15 250 50 0 empty empty open 0 8 0 6 #fcfcfc #0400fc
+>>>>>>> a6e3f481d483c26f7ee6ab9f76117165231a4001
 #0400fc 1;
 #X obj 101 101 cnv 15 50 58 empty empty empty 20 12 0 14 #fcfcfc #404040
 0;
 #X obj 101 100 vradio 12 0 0 7 \$0-ScaleType \$0-2ScaleType empty 0
 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X text 114 100 major;
+<<<<<<< HEAD
+#X text 114 112 minor;
+#X text 114 124 blue;
+#X text 114 136 whole;
+#X obj 534 69 route load;
+#X obj 534 91 s \$0-load;
+#X text 114 170 pentatonic;
+#X text 114 146 ocarina;
+#X text 114 158 octatonic;
+#X obj 212 17 sel major minor blue whole ocarina octatonic pentatonic
+;
+#X obj 224 191 tabread ocarina;
+#N canvas 454 253 462 312 (subpatch) 0;
+#X array ocarina 11 float 1 black black;
+#A 0 0 0 2 3 6 7 9 10 12 15 17;
+#X coords 0 16 10 0 20 14 1;
+#X scroll 1;
+#X restore 539 200 graph;
+#N canvas 0 22 462 312 (subpatch) 0;
+#X array pentatonic 11 float 1 black black;
+#A 0 0 2 3 6 7 9 10 12 15 17;
+#X coords 0 16 10 0 20 14 1;
+#X restore 540 230 graph;
+#X connect 0 0 28 0;
+#X connect 0 0 50 0;
+#X connect 6 0 11 0;
+#X connect 7 0 11 0;
+#X connect 8 0 11 0;
+#X connect 9 0 11 0;
+#X connect 10 0 11 0;
+#X connect 14 0 21 0;
+#X connect 14 0 31 0;
+#X connect 15 0 22 1;
+#X connect 15 0 32 0;
+#X connect 21 0 51 0;
+#X connect 22 0 1 0;
+#X connect 22 0 24 0;
+#X connect 23 0 2 0;
+#X connect 23 0 26 0;
+#X connect 23 0 30 0;
+#X connect 23 0 51 0;
+#X connect 25 0 51 0;
+#X connect 27 0 29 0;
+#X connect 28 0 29 0;
+#X connect 29 0 23 0;
+#X connect 30 0 27 0;
+#X connect 31 0 28 0;
+#X connect 32 0 28 0;
+#X connect 37 0 36 0;
+#X connect 38 0 36 1;
+#X connect 45 0 46 0;
+#X connect 45 1 12 0;
+#X connect 50 0 6 0;
+#X connect 50 1 7 0;
+#X connect 50 2 8 0;
+#X connect 50 3 9 0;
+#X connect 50 4 10 0;
+#X connect 50 7 45 0;
+#X connect 51 0 22 0;
+#X coords 0 -1 1 1 85 88 1 100 100;
+=======
 #X text 114 111 minor;
 #X text 114 123 blue;
 #X text 114 135 whole;
@@ -344,3 +438,4 @@ testingyet;
 #X connect 53 0 54 0;
 #X connect 57 0 56 0;
 #X coords 0 -1 1 1 85 90 1 100 100;
+>>>>>>> a6e3f481d483c26f7ee6ab9f76117165231a4001

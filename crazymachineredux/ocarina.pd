@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+#N canvas 533 70 613 623 10;
+=======
 #N canvas 195 51 613 687 10;
+>>>>>>> a6e3f481d483c26f7ee6ab9f76117165231a4001
 #N canvas 153 34 478 330 CTl2Mid 0;
 #X obj 107 5 inlet;
 #X obj 102 129 sel 1 0;
@@ -72,6 +76,15 @@
 #X connect 26 1 28 0;
 #X connect 27 0 7 0;
 #X connect 28 0 7 0;
+<<<<<<< HEAD
+#X restore 432 98 pd CTl2Mid;
+#X obj 699 280 mtof;
+#X obj 333 243 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1 1;
+#X obj 272 175 *~ 1.6;
+#X obj 446 32 unpack;
+#X obj 181 144 oldcontroller;
+=======
 #X restore 295 153 pd CTl2Mid;
 #X obj 351 212 mtof;
 #X obj 333 243 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
@@ -79,6 +92,7 @@
 #X obj 65 415 *~ 1.6;
 #X obj 294 176 unpack;
 #X obj 189 84 oldcontroller;
+>>>>>>> a6e3f481d483c26f7ee6ab9f76117165231a4001
 #N canvas 278 238 498 348 bender 0;
 #X obj 16 31 route key rel abs syn;
 #X obj 191 0 route abs_hat0x abs_hat0y;
@@ -103,14 +117,22 @@
 #X connect 9 0 4 0;
 #X connect 9 0 7 0;
 #X connect 10 0 9 0;
+<<<<<<< HEAD
+#X restore 624 114 pd bender;
+#X floatatom 359 51 5 0 0 0 - - - 0 0 1, f 5;
+#X obj 62 30 scalecollector;
+#X obj 455 67 pack;
+#X obj 547 130 bang;
+=======
 #X restore 492 118 pd bender;
 #X floatatom 542 95 5 0 0 0 - - - 0 0 1, f 5;
 #X obj 84 112 scalecollector;
 #X obj 462 143 bang;
+>>>>>>> a6e3f481d483c26f7ee6ab9f76117165231a4001
 #X obj 358 258 lim;
 #X obj 214 269 envelope;
-#X obj 97 269 envelope;
-#X obj 97 205 waveshape;
+#X obj 97 309 envelope;
+#X obj 97 245 waveshape;
 #N canvas 10 86 651 531 keyshift 0;
 #X obj 100 63 route abs;
 #X obj 100 84 route abs_hat0x abs_hat0y;
@@ -164,10 +186,17 @@
 #X connect 18 0 12 0;
 #X connect 19 0 12 0;
 #X connect 20 0 12 0;
+<<<<<<< HEAD
+#X restore 278 57 pd keyshift;
+#X floatatom 345 23 5 0 0 0 - - - 0 0 1, f 5;
+#X msg 39 173 1;
+#N canvas 235 323 567 368 delta 0;
+=======
 #X restore 298 37 pd keyshift;
 #X floatatom 365 3 5 0 0 0 - - - 0 0 1, f 5;
 #X msg 64 30 1;
 #N canvas 237 319 567 368 delta 0;
+>>>>>>> a6e3f481d483c26f7ee6ab9f76117165231a4001
 #X obj 100 28 inlet~;
 #X obj 150 132 dbtorms;
 #X obj 117 131 -;
@@ -199,17 +228,25 @@
 #X connect 8 0 7 0;
 #X connect 15 0 3 0;
 #X connect 16 0 3 0;
+<<<<<<< HEAD
+#X restore 238 23 pd delta;
+#X obj 215 347 piano;
+#X obj 95 147 scaleloader;
+#X floatatom 69 81 5 0 0 0 - - - 0 0 1, f 5;
+#X obj 594 157 + 40;
+=======
 #X restore 118 71 pd delta;
 #X obj 96 347 piano;
 #X obj 97 108 scaleloader;
 #X floatatom 66 64 5 0 0 0 - - - 0 0 1, f 5;
 #X obj 464 164 + 40;
+>>>>>>> a6e3f481d483c26f7ee6ab9f76117165231a4001
 #X obj 173 488 *~ 0.54;
 #X obj 215 204 waveshape;
-#X obj 75 463 specmash;
-#X obj 75 385 specmash;
+#X obj 426 146 specmash;
+#X obj 282 145 specmash;
 #X obj 331 295 s-h;
-#X obj 218 388 3tap;
+#X obj 385 207 3tap;
 #N canvas 278 238 498 348 bender 0;
 #X obj 16 31 route key rel abs syn;
 #X obj 247 121 route abs_hat0x abs_hat0y;
@@ -234,6 +271,25 @@
 #X connect 9 0 4 0;
 #X connect 9 0 7 0;
 #X connect 10 0 9 0;
+<<<<<<< HEAD
+#X restore 663 209 pd bender;
+#X obj 625 215 bang;
+#X obj 611 378 mtof;
+#X obj 611 259 + 40;
+#X obj 578 370 + 12;
+#X floatatom 359 65 5 0 0 0 - - - 0 0 1, f 5;
+#X msg 576 491 Gain \$1;
+#X msg 659 492 Gain \$1;
+#X obj 576 309 route key rel abs syn;
+#X obj 574 338 route abs_y abs_x abs_z abs_rz;
+#X floatatom 705 379 5 0 0 0 - - - 0 0 1, f 5;
+#X obj 564 428 moses 0;
+#X obj 596 398 expr ($f1-128)/512;
+#X obj 474 460 expr \\$f1*$f1*$f1*$f1;
+#X obj 594 457 expr \\$f1*$f1*$f1*$f1;
+#X obj 512 322 synesthes;
+#X obj 385 307 loopstat;
+=======
 #X restore 523 176 pd bender;
 #X obj 489 205 bang;
 #X obj 414 350 mtof;
@@ -251,6 +307,7 @@
 #X obj 474 452 expr \\$f1*$f1*$f1*$f1;
 #X obj 349 517 synesthes;
 #X obj 249 522 loopstat;
+>>>>>>> a6e3f481d483c26f7ee6ab9f76117165231a4001
 #N canvas 0 0 450 300 loopstatprep 0;
 #X obj 50 53 route btn_8 btn_9;
 #X obj 50 12 route key;
@@ -265,18 +322,37 @@
 #X connect 2 0 1 0;
 #X connect 5 0 3 0;
 #X connect 6 0 4 0;
+<<<<<<< HEAD
+#X restore 634 545 pd loopstatprep;
+#X obj 476 306 loopstat;
+=======
 #X restore 307 492 pd loopstatprep;
 #X obj 238 549 loopstat;
+>>>>>>> a6e3f481d483c26f7ee6ab9f76117165231a4001
 #X obj 160 570 +~;
 #X obj 271 592 outlet~;
 #X obj 171 600 dac~;
 #X obj 50 254 pack;
+<<<<<<< HEAD
+#X obj 710 245 bang;
+#X obj 667 252 sel 0;
+#X msg 509 21 load symbol savestates/specmash/highmash;
+#X msg 520 48 load symbol savestates/specmash/longmash;
+#X floatatom 305 83 5 0 0 0 - - - 0 0 1, f 5;
+#X obj 543 374 sel 0;
+#X obj 365 600 print;
+#X obj 48 222 change;
+#X text 391 37 bend 1;
+#X text 404 64 bend 2;
+#X obj 371 517 n64controller;
+=======
 #X msg 398 39 load symbol savestates/specmash/highmash;
 #X msg 409 66 load symbol savestates/specmash/longmash;
 #X floatatom 325 63 5 0 0 0 - - - 0 0 1, f 5;
 #X obj 398 297 sel 0;
 #X obj 48 222 change;
 #X obj 219 593 outlet~;
+>>>>>>> a6e3f481d483c26f7ee6ab9f76117165231a4001
 #X connect 0 0 4 0;
 #X connect 1 0 13 0;
 #X connect 2 0 11 1;
@@ -296,6 +372,47 @@
 #X connect 6 0 9 0;
 #X connect 6 0 21 1;
 #X connect 7 0 6 1;
+<<<<<<< HEAD
+#X connect 8 0 9 0;
+#X connect 8 0 22 0;
+#X connect 8 0 59 0;
+#X connect 10 0 22 0;
+#X connect 11 0 3 0;
+#X connect 11 0 48 0;
+#X connect 12 0 23 0;
+#X connect 12 0 28 0;
+#X connect 12 0 48 0;
+#X connect 12 0 25 0;
+#X connect 13 0 11 0;
+#X connect 13 0 48 0;
+#X connect 14 0 13 0;
+#X connect 15 0 56 0;
+#X connect 15 0 20 0;
+#X connect 16 0 15 1;
+#X connect 16 0 22 1;
+#X connect 17 0 8 0;
+#X connect 20 0 8 1;
+#X connect 20 1 8 2;
+#X connect 22 0 32 0;
+#X connect 24 0 12 0;
+#X connect 25 0 48 0;
+#X connect 26 0 48 0;
+#X connect 27 0 28 0;
+#X connect 27 0 48 0;
+#X connect 28 0 26 0;
+#X connect 28 0 48 0;
+#X connect 29 0 30 0;
+#X connect 29 0 32 1;
+#X connect 30 0 32 0;
+#X connect 31 0 24 0;
+#X connect 32 0 33 0;
+#X connect 32 0 1 0;
+#X connect 32 0 44 0;
+#X connect 33 0 31 0;
+#X connect 34 0 29 1;
+#X connect 35 0 26 1;
+#X connect 36 0 25 1;
+=======
 #X connect 8 0 21 0;
 #X connect 8 0 55 0;
 #X connect 9 0 21 0;
@@ -337,6 +454,7 @@
 #X connect 35 0 24 1;
 #X connect 36 2 37 0;
 #X connect 37 1 40 0;
+>>>>>>> a6e3f481d483c26f7ee6ab9f76117165231a4001
 #X connect 37 2 38 0;
 #X connect 39 0 41 0;
 #X connect 39 1 42 0;
@@ -352,6 +470,19 @@
 #X connect 47 0 44 0;
 #X connect 47 0 46 0;
 #X connect 47 0 49 0;
+<<<<<<< HEAD
+#X connect 47 0 50 1;
+#X connect 48 0 45 0;
+#X connect 48 0 47 0;
+#X connect 48 0 49 0;
+#X connect 48 0 50 0;
+#X connect 51 0 19 0;
+#X connect 54 0 26 1;
+#X connect 55 0 26 1;
+#X connect 57 0 19 1;
+#X connect 59 0 51 0;
+#X coords 0 -1 1 1 479 263 2 93 131;
+=======
 #X connect 47 0 49 1;
 #X connect 47 0 56 0;
 #X connect 50 0 18 0;
@@ -359,3 +490,4 @@
 #X connect 52 0 25 1;
 #X connect 54 0 18 1;
 #X connect 55 0 50 0;
+>>>>>>> a6e3f481d483c26f7ee6ab9f76117165231a4001

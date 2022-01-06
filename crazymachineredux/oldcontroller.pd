@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+#N canvas 271 51 597 451 10;
+=======
 #N canvas 275 51 597 476 10;
+>>>>>>> a6e3f481d483c26f7ee6ab9f76117165231a4001
 #X obj 14 -20 route key rel abs syn;
 #X obj 206 170 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1 1;
@@ -162,7 +166,11 @@
 0;
 #X obj 163 251 cnv 6 11 6 \$0-CTLL \$0-2CTLL empty 20 12 0 14 #3c50fc
 #fcfcfc 0;
+<<<<<<< HEAD
+#X obj 181 251 cnv 6 11 6 \$0-CTLR \$0-2CTLR empty 20 12 0 14 #3c50fc
+=======
 #X obj 181 251 cnv 6 11 6 \$0-CTLR \$0-2CTLR empty 20 12 0 14 #fc2828
+>>>>>>> a6e3f481d483c26f7ee6ab9f76117165231a4001
 #fcfcfc 0;
 #X obj 175 239 cnv 6 6 11 \$0-CTLU \$0-2CTLU empty 20 12 0 14 #3c50fc
 #fcfcfc 0;
@@ -242,8 +250,13 @@
 #X connect 12 0 2 0;
 #X connect 12 0 10 0;
 #X restore 479 104 pd rjoystick;
+<<<<<<< HEAD
+#X obj 235 257 cnv 2 2 2 empty \$0-RStick empty 20 12 0 14 #28f4f4
+#fcfcfc 0;
+=======
 #X obj 236 0 cnv 2 2 2 empty \$0-RStick empty 20 12 0 14 #28f4f4 #fcfcfc
 0;
+>>>>>>> a6e3f481d483c26f7ee6ab9f76117165231a4001
 #X obj 14 127 route btn_0 btn_1 btn_2 btn_3 btn_4 btn_5 btn_5 btn_6
 btn_7 btn_8 btn_9 btn_10 btn_11;
 #X obj 418 294 s \$0-LStick;
@@ -264,7 +277,11 @@ btn_7 btn_8 btn_9 btn_10 btn_11;
 #X msg 363 -48 print;
 #X msg 278 -34 open \$1;
 #X floatatom 283 -66 5 0 0 0 - - - 0 0 1, f 5;
+<<<<<<< HEAD
+#X msg 40 -73 open 4;
+=======
 #X msg 40 -73 open 17;
+>>>>>>> a6e3f481d483c26f7ee6ab9f76117165231a4001
 #X connect 0 0 44 0;
 #X connect 0 2 35 0;
 #X connect 0 2 37 0;
